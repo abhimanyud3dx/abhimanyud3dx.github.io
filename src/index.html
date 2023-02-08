@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ blog.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="{{ '/resources/favicon.ico' | url }}" />
+        <meta name="description" content="{{ blog.homePageMetaDescription }}" />
+        <link
+            rel="preload"
+            href="/assets/styles/salesforce-lightning-design-system.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="/assets/styles/salesforce-lightning-design-system.min.css"
+            />
+        </noscript>
+    </head>
+
+    <body
+        class="bg-gray-100 dark:bg-gray-900 dark:text-white"
+        style="display: none"
+    >
+        <header>
+            <page-header public-path="{{'/' | url }}" hero="true"></page-header>
+        </header>
+        <div class="container mx-auto pt-12">
+            <div class="flex justify-between container mx-auto">
+                <div class="w-full lg:w-8/12">
+                    <div class="flex items-center justify-between">
+                        <h1
+                            class="
+                                text-xl
+                                font-bold
+                                text-gray-700
+                                dark:text-gray-300
+                                md:text-2xl
+                            "
+                        >
+                            All Posts
+                        </h1>
+                    </div>
+                    {% for post in allposts %}
+                    <blog-tile
+                        date-string="{{ post.data.date }}"
+                        title="{{ post.data.title }}"
+                        thumbnail="{{ post.data.thumbnail | url }}"
+                        permalink="{{ post.url | url }}"
+                        tags="{{ post.data.tags }}"
+                    ></blog-tile>
+                    {% endfor %}
+
+                    <div class="mt-4 flex justify-center items-center px-3">
+                        <ui-pagination
+                            previous="{{ pagination.href.previous | url }}"
+                            next="{{ pagination.href.next | url }}"
+                        ></ui-pagination>
+                    </div>
+                </div>
+                <div class="-mx-8 w-4/12 hidden lg:block">
+                    <div class="px-8">
+                        <!-- TBD -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-12">
+            <page-footer public-path="{{'/' | url }}"></page-footer>
+        </footer>
+    </body>
+</html>

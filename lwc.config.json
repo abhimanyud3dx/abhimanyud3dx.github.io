@@ -1,0 +1,8 @@
+{
+    "modules": [
+        {
+            "dir": "src/modules"
+        },
+        { "npm": "lightning-base-components" }
+    ]
+}
