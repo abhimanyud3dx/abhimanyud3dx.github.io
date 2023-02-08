@@ -3,7 +3,7 @@
     "description": "A starter repository showing how to build a portfolio using LWC and slds",
     "version": "0.0.1",
     "author": "abhimanyud3dx",
-    "bugs": "https://github.com/abhimanyud3dx/portfolio/issues",
+    "bugs": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues",
     "dependencies": {
         "@salesforce-ux/design-system": "^2.20.1",
         "autoprefixer": "^10.2.4",
@@ -21,6 +21,7 @@
         "css-loader": "^5.0.1",
         "del-cli": "^3.0.1",
         "eslint": "^7.19.0",
+        "gh-pages": "^5.0.0",
         "html-minifier": "^4.0.0",
         "husky": "^4.3.8",
         "jsdom": "^16.4.0",
@@ -41,7 +42,7 @@
         "npm": ">=6.4.1",
         "yarn": ">=1.9.4"
     },
-    "homepage": "https://github.com/abhimanyud3dx/portfolio",
+    "homepage": "https://abhimanyud3dx.github.io/",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -59,7 +60,7 @@
             "eslint"
         ]
     },
-    "repository": "abhimanyud3dx/portfolio",
+    "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
         "build:lwc": "NODE_ENV=production webpack --mode=production",
         "build:lwc:dev": "webpack --mode=development",
@@ -76,6 +77,8 @@
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
-        "watch": "lwc-services watch -w webpack.config.dev.js"
+        "watch": "lwc-services watch -w webpack.config.dev.js",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     }
 }
