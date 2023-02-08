@@ -62,7 +62,7 @@
     },
     "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
-        "build:lwc": "NODE_ENV=production webpack --mode=production",
+        "build:lwc": "webpack --mode=production",
         "build:lwc:dev": "webpack --mode=development",
         "build:eleventy": "eleventy",
         "build": "run-s build:lwc clean:public build:eleventy clean:build",

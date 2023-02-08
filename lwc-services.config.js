@@ -9,7 +9,7 @@ module.exports = {
         { from: 'src/posts/', to: 'build/posts/' },
         {
             from: 'node_modules/@salesforce-ux/design-system/',
-            to: 'src'
+            to: 'dist'
         },
         {
             from: 'node_modules/@salesforce-ux/design-system/',
