@@ -72,20 +72,21 @@
     },
     "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
-        "build": "lwc-services build -m production",
-        "build:development": "lwc-services build",
+        "build:lwc": "NODE_ENV=production webpack --mode=production",
+        "build:lwc:dev": "webpack --mode=development",
+        "build:eleventy": "eleventy",
+        "build": "run-s build:lwc clean:public build:eleventy clean:build",
+        "clean:build": "del-cli build",
+        "clean:public": "del-cli public",
         "lint": "eslint ./src/**/*.js",
-        "prettier": "prettier --write '**/*.{css,html,js,json,md,ts,yaml,yml}'",
-        "prettier:verify": "prettier --list-different '**/*.{css,html,js,json,md,ts,yaml,yml}'",
-        "serve": "lwc-services serve",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "serve": "node scripts/server.js",
+        "serve:eleventy": "eleventy --serve",
         "test:unit": "lwc-services test:unit",
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
-        "watch": "run-p watch:client watch:server",
-        "watch:client": "lwc-services watch",
-        "watch:server": "nodemon",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "watch": "lwc-services watch -w webpack.config.dev.js"
     }
 }
