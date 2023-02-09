@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 const siteConfig = require('../config/blog.js');
 
-const app = express(); //Test 1
+const app = express(); //Test 3
 
 let directives = {
     defaultSrc: ["'self'"],
