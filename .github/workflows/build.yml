@@ -18,6 +18,8 @@ jobs:
             # Checkout the code in the pull request
             - name: 'Checkout source code'
               uses: actions/checkout@v2
+              with:
+                  token: ${{ secrets.GH_TOKEN }}
 
             # Cache node_modules to speed up the process
             - name: Restore node_modules cache
@@ -51,3 +53,4 @@ jobs:
               with:
                   publish_dir: ./public
                   github_token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GH_TOKEN }}
