@@ -39,7 +39,7 @@ jobs:
             - name: Add namespace to project config
               run: |
                   cd config
-                  sed -i -E "s,publicPath: '/',publicPath: '/lwc-blog-template/'," blog.js
+                  sed -i -E "s,publicPath: '/',publicPath: '/'," blog.js
 
             # Build LWC and Eleventy
             - name: 'Building LWC and Eleventy'
