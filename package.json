@@ -45,7 +45,7 @@
         ],
         "exec": "node ./scripts/server.js"
     },
-    "license": "CC0-1.0",
+    "license": "MIT",
     "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
         "build": "lwc-services build --mode production",
