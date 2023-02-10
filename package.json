@@ -63,6 +63,6 @@
         "postinstall": "husky install",
         "precommit": "yarn prettier && yarn lint && yarn test:unit",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d build"
     }
 }

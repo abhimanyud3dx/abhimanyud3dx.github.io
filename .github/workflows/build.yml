@@ -38,11 +38,18 @@ jobs:
 
             # Build LWC and Eleventy
             - name: 'Building LWC'
-              run: npm run deploy
+              run: npm run build
 
             # Deploy to GitHub pages
-            - name: 'Deploy to GitHub pages'
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  publish_dir: ./public
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
+            #- name: 'Deploy to GitHub pages'
+            #  uses: peaceiris/actions-gh-pages@v3
+            #  with:
+            #      publish_dir: ./public
+            #      github_token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Deploy with gh-pages
+              run: |
+                  git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                  npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
