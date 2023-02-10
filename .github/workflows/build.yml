@@ -33,7 +33,7 @@ jobs:
             # Install npm dependencies
             - name: 'Install npm dependencies'
               if: steps.cache-npm.outputs.cache-hit != 'true'
-              run:  npm intall
+              run:  npm install
                     npm ci
 
             # Add repo name to public path

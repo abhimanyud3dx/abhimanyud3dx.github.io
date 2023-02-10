@@ -1,8 +1,8 @@
 {
-    "name": "lwc-recipes-oss",
-    "version": "0.2.0",
+    "name": "Abhimanyu Portfolio",
+    "version": "0.0.1",
     "author": "Salesforce Developer Evangelism",
-    "bugs": "https://github.com/trailheadapps/lwc-recipes-oss/issues",
+    "bugs": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues",
     "dependencies": {
         "@salesforce-ux/design-system": "^2.14.2",
         "compression": "^1.7.4",
@@ -28,12 +28,12 @@
     "engines": {
         "node": ">=10.0.0"
     },
-    "homepage": "https://github.com/trailheadapps/lwc-recipes-oss",
+    "homepage": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io",
     "keywords": [
         "lwc"
     ],
     "license": "CC0-1.0",
-    "repository": "trailheadapps/lwc-recipes-oss",
+    "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
         "build": "lwc-services build --mode production",
         "build:development": "lwc-services build",
