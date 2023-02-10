@@ -3,6 +3,7 @@ const compression = require('compression');
 const helmet = require('helmet');
 const express = require('express');
 const path = require('path');
+var ghpages = require('gh-pages');
 
 const app = express();
 app.use(
@@ -26,6 +27,9 @@ app.use(compression());
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3001;
 const DIST_DIR = './dist';
+
+
+ghpages.publish('dist', (err)=>{ console.log(err);});
 
 app.use(express.static(DIST_DIR));
 
