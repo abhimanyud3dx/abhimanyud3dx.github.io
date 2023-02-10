@@ -39,8 +39,8 @@ jobs:
             # Build LWC and Eleventy
             - name: 'Building LWC'
               run: npm run deploy
-                  $ git config --global user.name "abhi"
-                  $ git config --global user.email "abhimanyu.singh.d3dx@gamil.com"
+                  $git config --global user.name "abhi"
+                  $git config --global user.email "abhimanyu.singh.d3dx@gamil.com"
 
             # Deploy to GitHub pages
             - name: 'Deploy to GitHub pages'
