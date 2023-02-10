@@ -1,0 +1,7 @@
+// Lightning Design System 2.20.1
+// Typography
+@mixin text-heading--label-normal {
+  font-size: $font-size-4;
+  line-height: $line-height-heading;
+  color: var(--slds-g-color-neutral-base-30, #{$color-text-weak});
+}

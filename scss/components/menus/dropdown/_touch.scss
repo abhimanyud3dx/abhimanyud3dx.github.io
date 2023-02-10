@@ -1,0 +1,17 @@
+// Lightning Design System 2.20.1
+.slds-dropdown {
+  padding: 0;
+  font-size: $font-size-5;
+}
+
+.slds-dropdown__item {
+
+  > a {
+    line-height: border-box-line-height($height-tappable, 0);
+    padding: 0 $spacing-small;
+  }
+}
+
+.slds-dropdown__header {
+  font-size: $font-size-5;
+}

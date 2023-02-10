@@ -1,0 +1,80 @@
+{
+  "aliases": {},
+  "props": {
+    "ratio-square": {
+      "originalValue": "1",
+      "syntax": "<length>",
+      "name": "ratio-square",
+      "value": "1",
+      "scope": "global",
+      "cssProperties": [
+        "aspect-ratio"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "ratio",
+      "comment": "Square aspect ratio."
+    },
+    "ratio-landscape": {
+      "originalValue": "4/3",
+      "syntax": "<length>",
+      "name": "ratio-landscape",
+      "value": "4/3",
+      "scope": "global",
+      "cssProperties": [
+        "aspect-ratio"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "ratio",
+      "comment": "Landscape aspect ratio."
+    },
+    "ratio-portrait": {
+      "originalValue": "3/4",
+      "syntax": "<length>",
+      "name": "ratio-portrait",
+      "value": "3/4",
+      "scope": "global",
+      "cssProperties": [
+        "aspect-ratio"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "ratio",
+      "comment": "Portrait aspect ratio."
+    },
+    "ratio-wide": {
+      "originalValue": "16/9",
+      "syntax": "<length>",
+      "name": "ratio-wide",
+      "value": "16/9",
+      "scope": "global",
+      "cssProperties": [
+        "aspect-ratio"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "ratio",
+      "comment": "Widescreen aspect ratio."
+    },
+    "ratio-ultrawide": {
+      "originalValue": "18/5",
+      "syntax": "<length>",
+      "name": "ratio-ultrawide",
+      "value": "18/5",
+      "scope": "global",
+      "cssProperties": [
+        "aspect-ratio"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "ratio",
+      "comment": "Ultra Widescreen aspect ratio."
+    }
+  }
+}

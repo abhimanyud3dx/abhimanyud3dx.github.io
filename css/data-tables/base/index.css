@@ -1,0 +1,671 @@
+/*! Lightning Design System 2.20.1 */
+.slds-wcag {
+  --slds-g-color-palette-blue-10: #001639;
+  --slds-g-color-palette-blue-15: #03234d;
+  --slds-g-color-palette-blue-20: #032d60;
+  --slds-g-color-palette-blue-30: #014486;
+  --slds-g-color-palette-blue-40: #0b5cab;
+  --slds-g-color-palette-blue-50: #0176d3;
+  --slds-g-color-palette-blue-60: #1b96ff;
+  --slds-g-color-palette-blue-65: #57a3fd;
+  --slds-g-color-palette-blue-70: #78b0fd;
+  --slds-g-color-palette-blue-80: #aacbff;
+  --slds-g-color-palette-blue-90: #d8e6fe;
+  --slds-g-color-palette-blue-95: #eef4ff;
+  --slds-g-color-palette-cloud-blue-10: #001a28;
+  --slds-g-color-palette-cloud-blue-15: #0a2636;
+  --slds-g-color-palette-cloud-blue-20: #023248;
+  --slds-g-color-palette-cloud-blue-30: #084968;
+  --slds-g-color-palette-cloud-blue-40: #05628a;
+  --slds-g-color-palette-cloud-blue-50: #107cad;
+  --slds-g-color-palette-cloud-blue-60: #0d9dda;
+  --slds-g-color-palette-cloud-blue-65: #08abed;
+  --slds-g-color-palette-cloud-blue-70: #1ab9ff;
+  --slds-g-color-palette-cloud-blue-80: #90d0fe;
+  --slds-g-color-palette-cloud-blue-90: #cfe9fe;
+  --slds-g-color-palette-cloud-blue-95: #eaf5fe;
+  --slds-g-color-palette-green-10: #071b12;
+  --slds-g-color-palette-green-15: #0c2912;
+  --slds-g-color-palette-green-20: #1c3326;
+  --slds-g-color-palette-green-30: #194e31;
+  --slds-g-color-palette-green-40: #396547;
+  --slds-g-color-palette-green-50: #2e844a;
+  --slds-g-color-palette-green-60: #3ba755;
+  --slds-g-color-palette-green-65: #41b658;
+  --slds-g-color-palette-green-70: #45c65a;
+  --slds-g-color-palette-green-80: #91db8b;
+  --slds-g-color-palette-green-90: #cdefc4;
+  --slds-g-color-palette-green-95: #ebf7e6;
+  --slds-g-color-palette-hot-orange-10: #281202;
+  --slds-g-color-palette-hot-orange-15: #421604;
+  --slds-g-color-palette-hot-orange-20: #4a2413;
+  --slds-g-color-palette-hot-orange-30: #7e2600;
+  --slds-g-color-palette-hot-orange-40: #aa3001;
+  --slds-g-color-palette-hot-orange-50: #d83a00;
+  --slds-g-color-palette-hot-orange-60: #ff5d2d;
+  --slds-g-color-palette-hot-orange-65: #ff784f;
+  --slds-g-color-palette-hot-orange-70: #ff906e;
+  --slds-g-color-palette-hot-orange-80: #feb9a5;
+  --slds-g-color-palette-hot-orange-90: #ffded5;
+  --slds-g-color-palette-hot-orange-95: #fef1ed;
+  --slds-g-color-palette-indigo-10: #200647;
+  --slds-g-color-palette-indigo-15: #1f0974;
+  --slds-g-color-palette-indigo-20: #321d71;
+  --slds-g-color-palette-indigo-30: #2f2cb7;
+  --slds-g-color-palette-indigo-40: #3a49da;
+  --slds-g-color-palette-indigo-50: #5867e8;
+  --slds-g-color-palette-indigo-60: #7f8ced;
+  --slds-g-color-palette-indigo-65: #8e9bef;
+  --slds-g-color-palette-indigo-70: #9ea9f1;
+  --slds-g-color-palette-indigo-80: #bec7f6;
+  --slds-g-color-palette-indigo-90: #e0e5f8;
+  --slds-g-color-palette-indigo-95: #f1f3fb;
+  --slds-g-color-palette-orange-10: #201600;
+  --slds-g-color-palette-orange-15: #371e03;
+  --slds-g-color-palette-orange-20: #3e2b02;
+  --slds-g-color-palette-orange-30: #5f3e02;
+  --slds-g-color-palette-orange-40: #825101;
+  --slds-g-color-palette-orange-50: #a96404;
+  --slds-g-color-palette-orange-60: #dd7a01;
+  --slds-g-color-palette-orange-65: #f38303;
+  --slds-g-color-palette-orange-70: #fe9339;
+  --slds-g-color-palette-orange-80: #ffba90;
+  --slds-g-color-palette-orange-90: #fedfd0;
+  --slds-g-color-palette-orange-95: #fff1ea;
+  --slds-g-color-palette-pink-10: #370114;
+  --slds-g-color-palette-pink-15: #4b0620;
+  --slds-g-color-palette-pink-20: #61022a;
+  --slds-g-color-palette-pink-30: #8a033e;
+  --slds-g-color-palette-pink-40: #b60554;
+  --slds-g-color-palette-pink-50: #e3066a;
+  --slds-g-color-palette-pink-60: #ff538a;
+  --slds-g-color-palette-pink-65: #fe7298;
+  --slds-g-color-palette-pink-70: #fe8aa7;
+  --slds-g-color-palette-pink-80: #fdb6c5;
+  --slds-g-color-palette-pink-90: #fddde3;
+  --slds-g-color-palette-pink-95: #fef0f3;
+  --slds-g-color-palette-purple-10: #240643;
+  --slds-g-color-palette-purple-15: #300b60;
+  --slds-g-color-palette-purple-20: #401075;
+  --slds-g-color-palette-purple-30: #5a1ba9;
+  --slds-g-color-palette-purple-40: #7526e3;
+  --slds-g-color-palette-purple-50: #9050e9;
+  --slds-g-color-palette-purple-60: #ad7bee;
+  --slds-g-color-palette-purple-65: #b78def;
+  --slds-g-color-palette-purple-70: #c29ef1;
+  --slds-g-color-palette-purple-80: #d7bff2;
+  --slds-g-color-palette-purple-90: #ece1f9;
+  --slds-g-color-palette-purple-95: #f6f2fb;
+  --slds-g-color-palette-red-10: #300c01;
+  --slds-g-color-palette-red-15: #4a0c04;
+  --slds-g-color-palette-red-20: #640103;
+  --slds-g-color-palette-red-30: #8e030f;
+  --slds-g-color-palette-red-40: #ba0517;
+  --slds-g-color-palette-red-50: #ea001e;
+  --slds-g-color-palette-red-60: #fe5c4c;
+  --slds-g-color-palette-red-65: #fe7765;
+  --slds-g-color-palette-red-70: #fe8f7d;
+  --slds-g-color-palette-red-80: #feb8ab;
+  --slds-g-color-palette-red-90: #feded8;
+  --slds-g-color-palette-red-95: #fef1ee;
+  --slds-g-color-palette-teal-10: #071b12;
+  --slds-g-color-palette-teal-15: #072825;
+  --slds-g-color-palette-teal-20: #023434;
+  --slds-g-color-palette-teal-30: #024d4c;
+  --slds-g-color-palette-teal-40: #056764;
+  --slds-g-color-palette-teal-50: #0b827c;
+  --slds-g-color-palette-teal-60: #06a59a;
+  --slds-g-color-palette-teal-65: #03b4a7;
+  --slds-g-color-palette-teal-70: #01c3b3;
+  --slds-g-color-palette-teal-80: #04e1cb;
+  --slds-g-color-palette-teal-90: #acf3e4;
+  --slds-g-color-palette-teal-95: #def9f3;
+  --slds-g-color-palette-violet-10: #2e0039;
+  --slds-g-color-palette-violet-15: #3d0157;
+  --slds-g-color-palette-violet-20: #481a54;
+  --slds-g-color-palette-violet-30: #730394;
+  --slds-g-color-palette-violet-40: #9602c7;
+  --slds-g-color-palette-violet-50: #ba01ff;
+  --slds-g-color-palette-violet-60: #cb65ff;
+  --slds-g-color-palette-violet-65: #d17dfe;
+  --slds-g-color-palette-violet-70: #d892fe;
+  --slds-g-color-palette-violet-80: #e5b9fe;
+  --slds-g-color-palette-violet-90: #f2defe;
+  --slds-g-color-palette-violet-95: #f9f0ff;
+  --slds-g-color-palette-yellow-10: #281202;
+  --slds-g-color-palette-yellow-15: #2e2204;
+  --slds-g-color-palette-yellow-20: #4f2100;
+  --slds-g-color-palette-yellow-30: #6f3400;
+  --slds-g-color-palette-yellow-40: #8c4b02;
+  --slds-g-color-palette-yellow-50: #a86403;
+  --slds-g-color-palette-yellow-60: #ca8501;
+  --slds-g-color-palette-yellow-65: #d79304;
+  --slds-g-color-palette-yellow-70: #e4a201;
+  --slds-g-color-palette-yellow-80: #fcc003;
+  --slds-g-color-palette-yellow-90: #f9e3b6;
+  --slds-g-color-palette-yellow-95: #fbf3e0;
+  --slds-g-color-palette-neutral-10: #181818;
+  --slds-g-color-palette-neutral-15: #242424;
+  --slds-g-color-palette-neutral-20: #2e2e2e;
+  --slds-g-color-palette-neutral-30: #444444;
+  --slds-g-color-palette-neutral-40: #5c5c5c;
+  --slds-g-color-palette-neutral-50: #747474;
+  --slds-g-color-palette-neutral-60: #939393;
+  --slds-g-color-palette-neutral-65: #a0a0a0;
+  --slds-g-color-palette-neutral-70: #aeaeae;
+  --slds-g-color-palette-neutral-80: #c9c9c9;
+  --slds-g-color-palette-neutral-90: #e5e5e5;
+  --slds-g-color-palette-neutral-95: #f3f3f3;
+  --slds-g-color-palette-neutral-100: #ffffff;
+}
+
+.slds-wcag {
+  --slds-g-color-neutral-base-100: #ffffff;
+  --slds-g-color-neutral-base-95: #f3f3f3;
+  --slds-g-color-neutral-base-90: #e5e5e5;
+  --slds-g-color-neutral-base-80: #c9c9c9;
+  --slds-g-color-neutral-base-70: #aeaeae;
+  --slds-g-color-neutral-base-65: #a0a0a0;
+  --slds-g-color-neutral-base-60: #939393;
+  --slds-g-color-neutral-base-50: #747474;
+  --slds-g-color-neutral-base-40: #5c5c5c;
+  --slds-g-color-neutral-base-30: #444444;
+  --slds-g-color-neutral-base-20: #2e2e2e;
+  --slds-g-color-neutral-base-15: #242424;
+  --slds-g-color-neutral-base-10: #181818;
+  --slds-g-color-brand-base-100: #ffffff;
+  --slds-g-color-brand-base-95: #eef4ff;
+  --slds-g-color-brand-base-90: #d8e6fe;
+  --slds-g-color-brand-base-80: #aacbff;
+  --slds-g-color-brand-base-70: #78b0fd;
+  --slds-g-color-brand-base-65: #57a3fd;
+  --slds-g-color-brand-base-60: #1b96ff;
+  --slds-g-color-brand-base-50: #0176d3;
+  --slds-g-color-brand-base-40: #0b5cab;
+  --slds-g-color-brand-base-30: #014486;
+  --slds-g-color-brand-base-20: #032d60;
+  --slds-g-color-brand-base-15: #03234d;
+  --slds-g-color-brand-base-10: #001639;
+  --slds-g-color-error-base-100: #ffffff;
+  --slds-g-color-error-base-90: #feded8;
+  --slds-g-color-error-base-80: #feb8ab;
+  --slds-g-color-error-base-70: #fe8f7d;
+  --slds-g-color-error-base-60: #fe5c4c;
+  --slds-g-color-error-base-50: #ea001e;
+  --slds-g-color-error-base-40: #ba0517;
+  --slds-g-color-error-base-30: #8e030f;
+  --slds-g-color-error-base-20: #640103;
+  --slds-g-color-error-base-10: #300c01;
+  --slds-g-color-warning-base-100: #ffffff;
+  --slds-g-color-warning-base-90: #fedfd0;
+  --slds-g-color-warning-base-80: #ffba90;
+  --slds-g-color-warning-base-70: #fe9339;
+  --slds-g-color-warning-base-60: #dd7a01;
+  --slds-g-color-warning-base-50: #a96404;
+  --slds-g-color-warning-base-40: #825101;
+  --slds-g-color-warning-base-30: #5f3e02;
+  --slds-g-color-warning-base-20: #3e2b02;
+  --slds-g-color-warning-base-10: #201600;
+  --slds-g-color-success-base-100: #ffffff;
+  --slds-g-color-success-base-90: #cdefc4;
+  --slds-g-color-success-base-80: #91db8b;
+  --slds-g-color-success-base-70: #45c65a;
+  --slds-g-color-success-base-60: #3ba755;
+  --slds-g-color-success-base-50: #2e844a;
+  --slds-g-color-success-base-40: #396547;
+  --slds-g-color-success-base-30: #194e31;
+  --slds-g-color-success-base-20: #1c3326;
+  --slds-g-color-success-base-10: #071b12;
+  --slds-g-color-border-base-1: #c9c9c9;
+  --slds-g-color-border-base-2: #aeaeae;
+  --slds-g-color-border-base-3: #939393;
+  --slds-g-color-border-base-4: #747474;
+  --slds-g-color-border-brand-1: #78b0fd;
+  --slds-g-color-border-brand-2: #1b96ff;
+  --slds-g-link-color: #0b5cab;
+  --slds-g-link-color-hover: #014486;
+  --slds-g-link-color-focus: #014486;
+  --slds-g-link-color-active: #032d60;
+}
+.slds-table {
+  background-color: var(--slds-g-color-neutral-base-100, white);
+  font-size: inherit;
+}
+.slds-table th,
+.slds-table td {
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  position: relative;
+}
+.slds-table th {
+  font-weight: 400;
+}
+.slds-table th:focus {
+  outline: 0;
+}
+.slds-table thead th {
+  background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+  color: var(--slds-g-color-neutral-base-30, #444444);
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.slds-table:not(.slds-no-row-hover) tbody tr:hover,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus {
+  outline: 0;
+}
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > td,
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > td,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > th {
+  background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+}
+.slds-table tbody tr.slds-is-selected > td,
+.slds-table tbody tr.slds-is-selected > th,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > td,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > th {
+  background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+}
+.slds-table tbody tr.slds-is-selected a,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover a {
+  color: var(--slds-g-link-color-focus, #032d60);
+}
+.slds-table .slds-cell-wrap {
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.slds-table .slds-cell-shrink {
+  width: 1%;
+}
+.slds-table .slds-cell-buffer_left {
+  padding-left: 1.5rem;
+}
+.slds-table .slds-cell-buffer_right {
+  padding-right: 1.5rem;
+}
+.slds-table tbody tr {
+  counter-increment: row-number;
+}
+.slds-table .slds-row-number:after {
+  content: counter(row-number);
+}
+.slds-table th:focus,
+.slds-table [role="gridcell"]:focus {
+  outline: 0;
+}
+.slds-table th:focus,
+.slds-table th.slds-has-focus,
+.slds-table [role="gridcell"]:focus,
+.slds-table [role="gridcell"].slds-has-focus {
+  -webkit-box-shadow: #0176d3 0 0 0 1px inset;
+  box-shadow: #0176d3 0 0 0 1px inset;
+}
+.slds-table th:focus.slds-cell_action-mode,
+.slds-table th.slds-has-focus.slds-cell_action-mode,
+.slds-table [role="gridcell"]:focus.slds-cell_action-mode,
+.slds-table [role="gridcell"].slds-has-focus.slds-cell_action-mode {
+  border-bottom: 3px solid var(--slds-g-color-brand-base-50, #014486);
+}
+.slds-table th:active,
+.slds-table [role="gridcell"]:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.slds-table .slds-radio [type="radio"] + .slds-radio__label .slds-radio_faux {
+  margin-right: 0;
+}
+.slds-table_cell-buffer tr > th:first-child,
+.slds-table_cell-buffer tr > td:first-child {
+  padding-left: 1.5rem;
+}
+.slds-table_cell-buffer tr > th:last-child,
+.slds-table_cell-buffer tr > td:last-child {
+  padding-right: 1.5rem;
+}
+.slds-table_bordered {
+  border-collapse: separate;
+  border-top: 1px solid var(--slds-g-color-border-base-1, #e5e5e5);
+  border-bottom: 1px solid var(--slds-g-color-border-base-1, #e5e5e5);
+}
+.slds-table_bordered thead > tr + tr > th {
+  border-top: 1px solid var(--slds-g-color-border-base-1, #e5e5e5);
+}
+.slds-table_bordered tbody td,
+.slds-table_bordered tbody th {
+  border-top: 1px solid var(--slds-g-color-border-base-1, #e5e5e5);
+}
+.slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus),
+.slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus),
+.slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus),
+.slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus) > th:not(.slds-has-focus) {
+  -webkit-box-shadow: var(--slds-g-color-border-base-1, #e5e5e5) 0 -1px 0 inset,
+    var(--slds-g-color-border-base-1, #e5e5e5) 0 1px 0 inset;
+  box-shadow: var(--slds-g-color-border-base-1, #e5e5e5) 0 -1px 0 inset,
+    var(--slds-g-color-border-base-1, #e5e5e5) 0 1px 0 inset;
+}
+.slds-table_col-bordered td + td,
+.slds-table_col-bordered th + th,
+.slds-table_col-bordered th + td,
+.slds-table_col-bordered td + th {
+  border-left: 1px solid var(--slds-g-color-border-base-1, #e5e5e5);
+}
+.slds-table_striped tbody tr:nth-of-type(even) > td,
+.slds-table_striped tbody tr:nth-of-type(even) > th {
+  background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+}
+.slds-table_fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.slds-table_fixed-layout thead {
+  background-color: var(--slds-g-color-neutral-base-100, white);
+}
+.slds-table_fixed-layout tbody {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.slds-table_fixed-layout .slds-cell-shrink {
+  width: 3rem;
+}
+.slds-table_fixed-layout .slds-cell-shrink:nth-child(n).slds-cell-shrink:nth-child(n) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.slds-table_fixed-layout .slds-cell-shrink:first-child {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+.slds-table_fixed-layout .slds-cell-shrink:last-child {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.slds-is-sortable .slds-th__action:hover,
+.slds-is-sortable .slds-th__action:focus,
+.slds-is-sortable.slds-has-focus .slds-th__action,
+.slds-is-sortable.slds-has-focus .slds-th__action:hover,
+.slds-is-sortable.slds-has-focus .slds-th__action:focus {
+  background-color: var(--slds-g-color-neutral-base-100, white);
+  color: currentColor;
+}
+.slds-is-sortable .slds-th__action:hover .slds-is-sortable__icon,
+.slds-is-sortable .slds-th__action:focus .slds-is-sortable__icon,
+.slds-is-sortable.slds-has-focus .slds-th__action .slds-is-sortable__icon,
+.slds-is-sortable.slds-has-focus .slds-th__action:hover .slds-is-sortable__icon,
+.slds-is-sortable.slds-has-focus .slds-th__action:focus .slds-is-sortable__icon {
+  display: inline-block;
+  fill: #0176d3;
+}
+.slds-th__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  height: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.slds-th__action:focus,
+.slds-th__action:hover {
+  outline: 0;
+  background-color: var(--slds-g-color-neutral-base-100, white);
+}
+.slds-th__action_form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.slds-th__action-button {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0.25rem;
+}
+.slds-has-button-menu .slds-th__action {
+  padding-right: 2rem;
+}
+.slds-has-button-menu .slds-th__action-button {
+  right: 0.75rem;
+}
+.slds-is-sortable__icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.25rem;
+  display: none;
+}
+.slds-is-sorted .slds-is-sortable__icon {
+  display: inline-block;
+}
+.slds-is-sorted_asc .slds-is-sortable__icon {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.slds-table_column-1-wrap tbody tr > *:nth-child(1) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-2-wrap tbody tr > *:nth-child(2) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-3-wrap tbody tr > *:nth-child(3) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-4-wrap tbody tr > *:nth-child(4) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-5-wrap tbody tr > *:nth-child(5) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-6-wrap tbody tr > *:nth-child(6) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-7-wrap tbody tr > *:nth-child(7) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-8-wrap tbody tr > *:nth-child(8) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-9-wrap tbody tr > *:nth-child(9) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-10-wrap tbody tr > *:nth-child(10) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-11-wrap tbody tr > *:nth-child(11) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-12-wrap tbody tr > *:nth-child(12) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-13-wrap tbody tr > *:nth-child(13) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-14-wrap tbody tr > *:nth-child(14) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+.slds-table_column-15-wrap tbody tr > *:nth-child(15) .slds-truncate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: normal;
+}
+
+[class*="slds-table_column-"] tr td .slds-truncate {
+  overflow: hidden;
+  position: relative;
+  max-height: 3.25rem;
+}
+[class*="slds-table_column-"] tr td .slds-truncate:after {
+  content: "";
+  position: absolute;
+  top: 2.25rem;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(69%, white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 69%);
+}
+
+[class*="slds-table_column-"] tr:hover td .slds-truncate:after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(250, 250, 249, 0)), color-stop(69%, #fafaf9));
+  background: linear-gradient(to right, rgba(250, 250, 249, 0) 0%, #fafaf9 69%);
+}
+.slds-table_resizable-cols thead th {
+  padding: 0;
+}
+.slds-table_resizable-cols thead th:last-of-type .slds-resizable__handle {
+  width: 0.75rem;
+  right: 0;
+}
+.slds-table_resizable-cols thead th:last-of-type .slds-resizable__handle .slds-resizable__divider:before,
+.slds-table_resizable-cols thead th:last-of-type .slds-resizable__handle .slds-resizable__divider:after {
+  right: 0;
+}
+.slds-resizable {
+  max-width: 100%;
+}
+.slds-resizable__handle {
+  width: 1.5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -0.75rem;
+}
+.slds-resizable__divider {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: col-resize;
+  z-index: 5000;
+}
+.slds-resizable__divider:before,
+.slds-resizable__divider:after {
+  height: 100%;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0.75rem;
+}
+.slds-resizable__divider:before {
+  background-color: var(--slds-g-color-neutral-base-70, #aeaeae);
+  height: 100%;
+  width: 1px;
+}
+.slds-resizable__divider:after {
+  background-color: var(--slds-g-color-brand-base-50, #0176d3);
+  width: 1px;
+  height: 100vh;
+  opacity: 0;
+}
+.slds-resizable__divider:hover:before,
+.slds-resizable__divider:focus:before,
+.slds-resizable__divider:active:before {
+  background-color: var(--slds-g-color-brand-base-50, #0176d3);
+  width: 0.25rem;
+}
+.slds-resizable__divider:hover:after,
+.slds-resizable__divider:focus:after,
+.slds-resizable__divider:active:after {
+  opacity: 1;
+}
+
+.slds-resizable__input:focus ~ .slds-resizable__handle .slds-resizable__divider:before {
+  background-color: var(--slds-g-color-brand-base-50, #0176d3);
+  width: 0.25rem;
+}
+.slds-resizable__input:focus ~ .slds-resizable__handle .slds-resizable__divider:after {
+  opacity: 1;
+}

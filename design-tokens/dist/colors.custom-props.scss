@@ -1,0 +1,135 @@
+.slds-wcag {
+    /* Neutral Base 100 - if used as a background, please use Neutral Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-100: #ffffff;
+    /* Neutral Base 95 - if used as a background, please use Neutral Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-95: #f3f3f3;
+    /* Neutral Base 90 - if used as a background, please use Neutral Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-90: #e5e5e5;
+    /* Neutral Base 80 - if used as a background, please use Neutral Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-80: #c9c9c9;
+    /* Neutral Base 70 - if used as a background, please use Neutral Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-70: #aeaeae;
+    /* Neutral Base 65 - if used as a background, please use Neutral Base 15-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-65: #a0a0a0;
+    /* Neutral Base 60 - if used as a background, please use Neutral Base 100 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-60: #939393;
+    /* Neutral Base 50 - if used as a background, please use Neutral Base 100-95 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-50: #747474;
+    /* Neutral Base 40 - if used as a background, please use Neutral Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-40: #5c5c5c;
+    /* Neutral Base 30 - if used as a background, please use Neutral Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-30: #444444;
+    /* Neutral Base 20 - if used as a background, please use Neutral Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-20: #2e2e2e;
+    /* Neutral Base 15 - if used as a background, please use Neutral Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-15: #242424;
+    /* Neutral Base 10 - if used as a background, please use Neutral Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-10: #181818;
+    /* Brand Base 100 - if used as a background, please use Brand Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-100: #ffffff;
+    /* Brand Base 95 - if used as a background, please use Brand Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-95: #eef4ff;
+    /* Brand Base 90 - if used as a background, please use Brand Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-90: #d8e6fe;
+    /* Brand Base 80 - if used as a background, please use Brand Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-80: #aacbff;
+    /* Brand Base 70 - if used as a background, please use Brand Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-70: #78b0fd;
+    /* Brand Base 65 - if used as a background, please use Brand Base 15-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-65: #57a3fd;
+    /* Brand Base 60 - if used as a background, please use Brand Base 100 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-60: #1b96ff;
+    /* Brand Base 50 - if used as a background, please use Brand Base 100-95 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-50: #0176d3;
+    /* Brand Base 40 - if used as a background, please use Brand Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-40: #0b5cab;
+    /* Brand Base 30 - if used as a background, please use Brand Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-30: #014486;
+    /* Brand Base 20 - if used as a background, please use Brand Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-20: #032d60;
+    /* Brand Base 15 - if used as a background, please use Brand Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-15: #03234d;
+    /* Brand Base 10 - if used as a background, please use Brand Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-10: #001639;
+    /* Error Base 100 - if used as a background, please use Error Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-100: #ffffff;
+    /* Error Base 90 - if used as a background, please use Error Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-90: #feded8;
+    /* Error Base 80 - if used as a background, please use Error Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-80: #feb8ab;
+    /* Error Base 70 - if used as a background, please use Error Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-70: #fe8f7d;
+    /* Error Base 60 - if used as a background, please use Error Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-60: #fe5c4c;
+    /* Error Base 50 - if used as a background, please use Error Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-error-base-50: #ea001e;
+    /* Error Base 40 - if used as a background, please use Error Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-error-base-40: #ba0517;
+    /* Error Base 30 - if used as a background, please use Error Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-error-base-30: #8e030f;
+    /* Error Base 20 - if used as a background, please use Error Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-error-base-20: #640103;
+    /* Error Base 10 - if used as a background, please use Error Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-error-base-10: #300c01;
+    /* Warning Base 100 - if used as a background, please use Warning Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-100: #ffffff;
+    /* Warning Base 90 - if used as a background, please use Warning Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-90: #fedfd0;
+    /* Warning Base 80 - if used as a background, please use Warning Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-80: #ffba90;
+    /* Warning Base 70 - if used as a background, please use Warning Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-70: #fe9339;
+    /* Warning Base 60 - if used as a background, please use Warning Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-60: #dd7a01;
+    /* Warning Base 50 - if used as a background, please use Warning Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-50: #a96404;
+    /* Warning Base 40 - if used as a background, please use Warning Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-40: #825101;
+    /* Warning Base 30 - if used as a background, please use Warning Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-30: #5f3e02;
+    /* Warning Base 20 - if used as a background, please use Warning Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-20: #3e2b02;
+    /* Warning Base 10 - if used as a background, please use Warning Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-10: #201600;
+    /* Success Base 100 - if used as a background, please use Success Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-100: #ffffff;
+    /* Success Base 90 - if used as a background, please use Success Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-90: #cdefc4;
+    /* Success Base 80 - if used as a background, please use Success Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-80: #91db8b;
+    /* Success Base 70 - if used as a background, please use Success Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-70: #45c65a;
+    /* Success Base 60 - if used as a background, please use Success Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-60: #3ba755;
+    /* Success Base 50 - if used as a background, please use Success Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-success-base-50: #2e844a;
+    /* Success Base 40 - if used as a background, please use Success Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-success-base-40: #396547;
+    /* Success Base 30 - if used as a background, please use Success Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-success-base-30: #194e31;
+    /* Success Base 20 - if used as a background, please use Success Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-success-base-20: #1C3326;
+    /* Success Base 10 - if used as a background, please use Success Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-success-base-10: #071b12;
+    /* Nuetral border color for UI elements. */
+    --slds-g-color-border-base-1: #c9c9c9;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-2: #aeaeae;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-3: #939393;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-4: #747474;
+    /* Brand border color for UI elements. */
+    --slds-g-color-border-brand-1: #78b0fd;
+    /* Alternate brand border color for UI elements. */
+    --slds-g-color-border-brand-2: #1b96ff;
+    /* Default color for hyperlinks. */
+    --slds-g-link-color: #0b5cab;
+    /* Default color on hover for hyperlinks. */
+    --slds-g-link-color-hover: #014486;
+    /* Default color on focus for hyperlinks. */
+    --slds-g-link-color-focus: #014486;
+    /* Default color on active for hyperlinks. */
+    --slds-g-link-color-active: #032d60;
+  }
+  

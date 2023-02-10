@@ -1,0 +1,1 @@
+module.exports={lineHeightText:"1.375",varLineHeightText:"1.375",widthStageLeft:"250px"};

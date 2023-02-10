@@ -1,0 +1,27 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+@mixin text-heading--label-normal {
+  font-size: $font-size-2;
+  line-height: $line-height-heading;
+  color: var(--slds-g-color-neutral-base-30, #{$color-text-weak});
+}
+
+@mixin text-heading--label-bold {
+  font-size: $font-size-2;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: var(--slds-g-color-neutral-base-30, #{$color-text-weak});
+}
+
+@mixin text-heading--label {
+  @include text-heading--label-normal;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+@mixin text-title {
+  font-size: $font-size-4;
+  font-weight: $font-weight-bold;
+}

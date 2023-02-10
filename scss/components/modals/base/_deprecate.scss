@@ -1,0 +1,79 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+/**
+ * Originally this deprecate file was not being imported, therefore the
+ * below rule was not outputted. Commenting out to keep existing behavior
+ * since this is deprecated and nothing broke with its absence.
+ */
+// @include deprecate('4.0.0', 'Please use slds-backdrop instead') {
+
+//   .slds-modal-backdrop {
+//     @include backdrop;
+//   }
+// }
+
+@include deprecate('4.0.0', 'Please use slds-modal__content instead') {
+  /**
+   * Creates the shaded menu area for the modal.
+   *
+   * @selector .slds-modal__menu
+   * @restrict .slds-modal div
+   * @notes Either `.slds-modal__menu` or `.slds-modal__content` must be used. If you’re using this class, you do not need the other. This should be nested immediately inside `.slds-modal_container` and immediately after `.slds-modal__header`.
+   * @required
+   * @deprecated
+   */
+  .slds-modal__menu {
+    position: relative;
+    border-radius: $border-radius-medium;
+    padding: $spacing-medium;
+    background-color: var(--slds-g-color-neutral-base-95, #{$color-background});
+
+    @include mq-medium-max {
+
+      .slds-button {
+        width: 100%;
+        margin: $spacing-xxx-small 0;
+      }
+    }
+  }
+}
+
+@include deprecate('4.0.0', 'Please move slds-modal__close outside modal header') {
+
+  .slds-modal__header .slds-modal__close {
+    position: absolute;
+    top: ($square-icon-medium-boundary * -1.25);
+    right: ((($square-icon-medium-boundary - $square-icon-medium-content) * 0.5) * -1);
+    margin-left: 0;
+    bottom: 0;
+  }
+}
+
+@include deprecate('4.0.0', 'Empty modal header no longer necessary') {
+  /**
+  * Use when modal header has no content
+  *
+  * @selector .slds-modal__header_empty
+  * @restrict .slds-modal__header
+  * @deprecated
+  */
+  .slds-modal__header_empty,
+  .slds-modal__header--empty {
+    /*! @css-var-fallback padding-top */
+    --sds-c-modal-header-spacing-block-start: 0;
+
+    /*! @css-var-fallback padding-bottom */
+    --sds-c-modal-header-spacing-block-end: 0;
+
+    /*! @css-var-fallback padding-left */
+    --sds-c-modal-header-spacing-inline-start: 0;
+
+    /*! @css-var-fallback padding-right */
+    --sds-c-modal-header-spacing-inline-end: 0;
+
+    /*! @css-var-fallback border-bottom */
+    --slds-c-modal-sizing-border: 0;
+  }
+}

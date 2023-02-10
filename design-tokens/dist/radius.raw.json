@@ -1,0 +1,80 @@
+{
+  "aliases": {},
+  "props": {
+    "radius-border-1": {
+      "originalValue": "0.125rem",
+      "syntax": "<length>",
+      "name": "radius-border-1",
+      "value": "0.125rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-radius"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "radius",
+      "comment": "Small border radius for UI elements."
+    },
+    "radius-border-2": {
+      "originalValue": "0.25rem",
+      "syntax": "<length>",
+      "name": "radius-border-2",
+      "value": "0.25rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-radius"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "radius",
+      "comment": "Medium border radius for UI elements."
+    },
+    "radius-border-3": {
+      "originalValue": "0.5rem",
+      "syntax": "<length>",
+      "name": "radius-border-3",
+      "value": "0.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-radius"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "radius",
+      "comment": "Large border radius for UI elements."
+    },
+    "radius-border-4": {
+      "originalValue": "1rem",
+      "syntax": "<length>",
+      "name": "radius-border-4",
+      "value": "1rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-radius"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "radius",
+      "comment": "Extra Large border radius for UI elements."
+    },
+    "radius-border-circle": {
+      "originalValue": "100%",
+      "syntax": "<length>",
+      "name": "radius-border-circle",
+      "value": "100%",
+      "scope": "global",
+      "cssProperties": [
+        "border-radius"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "radius",
+      "comment": "Circular border radius for UI elements."
+    }
+  }
+}

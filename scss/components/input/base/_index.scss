@@ -1,0 +1,353 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+@import 'deprecate';
+
+/**
+ * @summary Initializes text input
+ *
+ * @name base
+ * @selector .slds-input
+ * @restrict input
+ * @support dev-ready
+ * @variant
+ */
+.slds-input {
+  @include input;
+  display: inline-block;
+
+  &:focus,
+  &:active {
+    @include input-focus-active;
+  }
+
+  &[disabled],
+  &.slds-is-disabled {
+    @include input-disabled;
+  }
+
+  /**
+   * @selector [readonly]
+   * @restrict .slds-input
+   */
+  &[readonly] {
+    /*! @css-var-fallback padding-left */
+    --slds-c-input-spacing-horizontal-start: 0;
+
+    /*! @css-var-fallback border-color */
+    --slds-c-input-color-border: transparent;
+
+    /*! @css-var-fallback background-color */
+    --slds-c-input-color-background: transparent;
+
+    font-size: $input-static-font-size;
+    // TODO: This is a plain readonly input. It should not have the text treatment that static has.
+    font-weight: $input-readonly-font-weight;
+  }
+
+  &[type='search']::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  // Hide extra UI added by the browser—specifically the close icon—for Search inputs
+  &[type="search"]::-webkit-search-decoration,
+  &[type="search"]::-webkit-search-cancel-button,
+  &[type="search"]::-webkit-search-results-button,
+  &[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  /**
+   * Prevents certain input types from switching to RTL layout.
+   */
+  &[type='url'],
+  &[type='tel'],
+  &[type='email'] {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+/**
+  * Removes aesthetic nature from an input
+  *
+  * @selector .slds-input_bare
+  * @restrict .slds-input, input, textarea
+  * @modifier
+  */
+
+.slds-input_bare,
+.slds-input--bare {
+  /*! @css-var-fallback background-color */
+  --slds-c-input-color-background: transparent;
+
+  /*! @css-var-fallback padding-right */
+  --slds-c-input-spacing-horizontal-end: 0;
+
+  /*! @css-var-fallback padding-left */
+  --slds-c-input-spacing-horizontal-start: #{$spacing-small};
+
+  /*! @css-var-fallback color */
+  --slds-c-input-text-color: var(--slds-g-color-neutral-base-10, #{$color-text-default});
+  border: 0;
+
+  &:focus,
+  &:active {
+    /*! @css-var-fallback box-shadow */
+    --slds-c-input-shadow-focus: none;
+  }
+}
+
+/**
+  * Used to apply an input size to another element thats a non input
+  * Because sometimes I need elements the same height as inputs
+  *
+  * @selector .slds-input_height
+  * @restrict .slds-input
+  */
+.slds-input_height,
+.slds-input--height {
+  min-height: calc(#{$height-input} + (#{$border-width-thin} * 2)); // For IE
+}
+
+/**
+ * @summary Adds aesthetic nature of input to non-form element, such as within a select-only combobox
+ *
+ * @selector .slds-input_faux
+ * @restrict button
+ */
+.slds-input_faux {
+  @include input;
+  display: inline-flex;
+  flex: 1 1 auto;
+  text-align: left;
+
+  &.slds-is-disabled {
+    @include input-disabled;
+  }
+
+  > span:before {
+    content: '';
+    display: inline-block;
+  }
+}
+
+/**
+ * @summary Modifier to allow a [readonly] input to have borders
+ *
+ * @selector .slds-input_borders
+ * @restrict .slds-input
+ */
+.slds-input_borders[readonly] {
+  /*! @css-var-fallback padding-right */
+  --slds-c-input-spacing-horizontal-start: #{$spacing-small};
+
+  /*! @css-var-fallback border-color */
+  --slds-c-input-color-border: var(--slds-g-color-border-base-4, #{$color-border-input});
+}
+
+/**
+ * @summary Modifier if text input has svg icon adjacent to input
+ *
+ * @selector .slds-input-has-icon
+ * @restrict .slds-form-element div
+ */
+.slds-input-has-icon {
+  position: relative;
+
+  /**
+   * @summary Hook for .slds-input-has-icon
+   *
+   * @selector .slds-input__icon
+   * @restrict .slds-input-has-icon svg, .slds-input-has-icon button, .slds-input-has-icon span
+   */
+  .slds-input__icon {
+    @include square($square-icon-medium-content-alt);
+    position: absolute;
+    top: 50%;
+    margin-top: (($square-icon-medium-content-alt * 0.5) * -1);
+    line-height: 1;
+    border: 0; // Re-aligns icons to center
+    z-index: 2;
+  }
+
+  .slds-input__icon:not(button) {
+    pointer-events: none;
+  }
+}
+
+/**
+  * @summary Positions .slds-input__icon to the left of the text input
+  *
+  * @selector .slds-input-has-icon_left
+  * @restrict .slds-input-has-icon
+  */
+.slds-input-has-icon_left,
+.slds-input-has-icon--left {
+
+  .slds-input__icon {
+    left: $spacing-small;
+  }
+
+  .slds-input,
+  .slds-input_faux,
+  .slds-input_bare,
+  .slds-input--bare {
+    /*! @css-var-fallback padding-left */
+    --slds-c-input-spacing-horizontal-start: #{$spacing-x-large};
+  }
+}
+
+/**
+  * @summary Positions .slds-input__icon to the right of the text input
+  *
+  * @selector .slds-input-has-icon_right
+  * @restrict .slds-input-has-icon
+  */
+.slds-input-has-icon_right,
+.slds-input-has-icon--right {
+
+  .slds-input__icon {
+    right: $spacing-small;
+  }
+
+  .slds-input,
+  .slds-input_faux,
+  .slds-input_bare,
+  .slds-input--bare {
+    /*! @css-var-fallback padding-right */
+    --slds-c-input-spacing-horizontal-end: #{$spacing-x-large};
+  }
+}
+
+/**
+  * @summary Positions .slds-input__icon_left to the left of the text input and .slds-input__icon_right to the right of the text input
+  *
+  * @selector .slds-input-has-icon_left-right
+  * @restrict .slds-input-has-icon
+  */
+.slds-input-has-icon_left-right,
+.slds-input-has-icon--left-right {
+  /**
+    * @summary Hook for .slds-input-has-icon--left-right
+    *
+    * @selector .slds-input__icon_left
+    * @restrict .slds-input__icon
+    */
+  .slds-input__icon_left,
+  .slds-input__icon--left {
+    left: $spacing-small;
+  }
+
+  /**
+    * @summary Hook for .slds-input-has-icon_left-right
+    *
+    * @selector .slds-input__icon_right
+    * @restrict .slds-input__icon
+    */
+  .slds-input__icon_right,
+  .slds-input__icon--right {
+    right: $spacing-small;
+  }
+
+  .slds-input,
+  .slds-input_faux,
+  .slds-input_bare,
+  .slds-input--bare {
+    /*! @css-var-fallback padding-left */
+    --slds-c-input-spacing-horizontal-start: #{$spacing-x-large};
+
+    /*! @css-var-fallback padding-right */
+    --slds-c-input-spacing-horizontal-end: #{$spacing-x-large};
+  }
+}
+
+/**
+* @selector .slds-input-has-icon_group-right
+* @restrict .slds-input-has-icon
+*/
+.slds-input-has-icon_group-right {
+
+  .slds-input,
+  .slds-input_faux,
+  .slds-input_bare,
+  .slds-input--bare {
+    /*! @css-var-fallback padding-right */
+    --slds-c-input-spacing-horizontal-end: calc(#{$spacing-xx-large} + #{$spacing-x-small});
+  }
+}
+
+/**
+ * @summary Positions two items (icons and/or spinners) on one side or the other of the input
+ *
+ * @selector .slds-input__icon-group
+ * @restrict .slds-input-has-icon div
+ */
+.slds-input__icon-group {
+  position: absolute;
+  height: $square-icon-medium-content;
+  margin-top: (($square-icon-medium-content * 0.5) * -1);
+}
+
+/**
+ * @summary Positions the close icon and spinner on the right side of the input while searching
+ *
+ * @selector .slds-input__icon-group_right
+ * @restrict .slds-input__icon-group
+ */
+.slds-input__icon-group_right {
+  right: 0;
+  top: 50%;
+
+  .slds-input__icon_right,
+  .slds-input__icon--right {
+    right: $spacing-x-small;
+  }
+
+  .slds-input__spinner {
+    right: $spacing-large;
+    left: auto;
+  }
+}
+
+/**
+ * @summary Use on input container to let it know there is fixed text to the left or right of the input
+ *
+ * @selector .slds-input-has-fixed-addon
+ * @restrict .slds-form-element .slds-form-element__control
+ */
+.slds-input-has-fixed-addon {
+  display: flex;
+}
+
+.slds-has-error .slds-input {
+  /*! @css-var-fallback border-color */
+  --slds-c-input-color-border: var(--slds-g-color-error-base-40, #{$color-border-error});
+
+  /*! @css-var-fallback box-shadow */
+  --slds-c-input-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 #{$border-width-thin} inset;
+
+  /*! @css-var-fallback background-color */
+  --slds-c-input-color-background: var(--sds-c-input-color-background, var(--sds-c-input-color-background, var(--slds-g-color-neutral-base-100, #{$color-background-input})));
+
+  /*! @css-var-fallback color */
+  --slds-c-input-text-color: var(--slds-c-input-text-color, var(--sds-c-input-text-color));
+  background-clip: padding-box;
+
+  &:focus,
+  &:active {
+    /*! @css-var-fallback border-color */
+    --slds-c-input-color-border-focus: var(--slds-g-color-error-base-40, #{$color-border-error});
+
+    /*! @css-var-fallback box-shadow */
+    --slds-c-input-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 #{$border-width-thin} inset, #{$shadow-button-focus};
+  }
+}
+
+.slds-has-error .slds-input__icon {
+  fill: var(--slds-g-color-error-base-40, #{$color-text-error});
+  color: var(--slds-g-color-error-base-40, #{$color-text-error});
+}

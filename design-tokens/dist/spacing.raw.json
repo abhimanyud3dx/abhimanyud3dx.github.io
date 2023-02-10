@@ -1,0 +1,245 @@
+{
+  "aliases": {},
+  "props": {
+    "spacing-1": {
+      "originalValue": "0.25rem",
+      "syntax": "<length>",
+      "name": "spacing-1",
+      "value": "0.25rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 1."
+    },
+    "spacing-2": {
+      "originalValue": "0.5rem",
+      "syntax": "<length>",
+      "name": "spacing-2",
+      "value": "0.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 2."
+    },
+    "spacing-3": {
+      "originalValue": "0.75rem",
+      "syntax": "<length>",
+      "name": "spacing-3",
+      "value": "0.75rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 3."
+    },
+    "spacing-4": {
+      "originalValue": "1rem",
+      "syntax": "<length>",
+      "name": "spacing-4",
+      "value": "1rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 4."
+    },
+    "spacing-5": {
+      "originalValue": "1.5rem",
+      "syntax": "<length>",
+      "name": "spacing-5",
+      "value": "1.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 5."
+    },
+    "spacing-6": {
+      "originalValue": "2rem",
+      "syntax": "<length>",
+      "name": "spacing-6",
+      "value": "2rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 6."
+    },
+    "spacing-7": {
+      "originalValue": "2.5rem",
+      "syntax": "<length>",
+      "name": "spacing-7",
+      "value": "2.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 7."
+    },
+    "spacing-8": {
+      "originalValue": "3rem",
+      "syntax": "<length>",
+      "name": "spacing-8",
+      "value": "3rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 8."
+    },
+    "spacing-9": {
+      "originalValue": "3.5rem",
+      "syntax": "<length>",
+      "name": "spacing-9",
+      "value": "3.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 9."
+    },
+    "spacing-10": {
+      "originalValue": "4rem",
+      "syntax": "<length>",
+      "name": "spacing-10",
+      "value": "4rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 10."
+    },
+    "spacing-11": {
+      "originalValue": "4.5rem",
+      "syntax": "<length>",
+      "name": "spacing-11",
+      "value": "4.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 11."
+    },
+    "spacing-12": {
+      "originalValue": "5rem",
+      "syntax": "<length>",
+      "name": "spacing-12",
+      "value": "5rem",
+      "scope": "global",
+      "cssProperties": [
+        "padding",
+        "margin",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "spacing",
+      "comment": "Spacing size 12."
+    }
+  }
+}

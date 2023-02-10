@@ -1,0 +1,127 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+/**
+ * @summary Initializes select
+ *
+ * @name base
+ * @selector .slds-select
+ * @restrict select
+ * @support dev-ready
+ * @variant
+ */
+.slds-select {
+  height: calc(#{$height-input} + (#{$border-width-thin} * 2));
+  width: 100%;
+  border: $border-width-thin solid var(--slds-c-select-color-border,
+    var(--sds-c-select-color-border, var(--slds-g-color-border-base-4, #{$color-border-input})));
+  border-radius: var(--slds-c-select-radius-border, var(--sds-c-select-radius-border, $border-radius-medium));
+  background-color: var(--slds-c-select-color-background, var(--sds-c-select-color-background, var(--slds-g-color-neutral-base-100, #{$color-background-input})));
+  color: var(--slds-c-select-text-color, var(--sds-c-select-text-color));
+  box-shadow: var(--slds-c-select-shadow, var(--sds-c-select-shadow));
+  transition: border $duration-quickly linear, background-color $duration-quickly linear;
+
+  &:required {
+    box-shadow: none;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    border-color: var(--slds-c-select-color-border-focus, var(--sds-c-select-color-border-focus, var(--slds-g-color-brand-base-60, #{$color-border-input-active})));
+    background-color: var(--slds-c-select-color-background-focus, var(--sds-c-select-color-background-focus, var(--slds-g-color-neutral-base-100, #{$color-background-input-active})));
+    color: var(--slds-c-select-text-color-focus, var(--sds-c-select-text-color-focus));
+    box-shadow: var(--slds-c-select-shadow-focus, var(--sds-c-select-shadow-focus, $shadow-button-focus));
+  }
+
+  &[disabled],
+  &.slds-is-disabled {
+    background-color: var(--slds-g-color-neutral-base-95, #{$color-background-input-disabled});
+    border-color: var(--slds-g-color-border-base-1, #{$color-border-input-disabled});
+    color: var(--slds-g-color-neutral-base-50, #{$color-text-input-disabled});
+    cursor: not-allowed;
+    user-select: none;
+    opacity: 1;
+
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &[size],
+  &[multiple] {
+    min-height: calc(#{$height-input} + (#{$border-width-thin} * 2));
+    height: inherit;
+
+    option {
+      padding: $spacing-x-small;
+    }
+  }
+}
+
+/**
+* Initializes select container for custom styling
+*
+* @selector .slds-select_container
+* @restrict div
+*/
+.slds-select_container {
+  position: relative;
+  color: var(--sds-c-select-text-color);
+
+  // Normalize the <select> appearance in various browsers
+  // See https://github.com/salesforce-ux/design-system/issues/122
+  .slds-select {
+    // stylelint-disable property-no-vendor-prefix
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    // stylelint-enable property-no-vendor-prefix
+    padding: {
+      left: $spacing-x-small;
+      right: $spacing-large;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    right: $spacing-x-small;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    pointer-events: none;
+  }
+
+  &:before {
+    border-bottom: 5px solid currentColor;
+    top: calc((#{$line-height-button-small} / 2) - 6px);
+  }
+
+  &:after {
+    border-top: 5px solid currentColor;
+    bottom: calc((#{$line-height-button-small} / 2) - 6px);
+  }
+}
+
+.slds-has-error {
+
+  .slds-select {
+    border-color: var(--slds-g-color-error-base-40, #{$color-border-error});
+    box-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 $border-width-thin inset;
+    background-clip: padding-box;
+
+    &:focus,
+    &:active {
+      box-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 $border-width-thin inset, $shadow-button-focus;
+    }
+  }
+}

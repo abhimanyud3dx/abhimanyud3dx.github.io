@@ -1,0 +1,26 @@
+global:
+  scope: component
+  type: color
+  category: background-color
+  cssProperties:
+  - 'background*'
+  - 'border*'
+  - box-shadow
+imports:
+- "../../../../design-tokens/aliases/color-palettes.yml"
+props:
+  TABLE_COLOR_BACKGROUND_STRIPES:
+    value: '{!PALETTE_NEUTRAL_95}'
+    comment: Alternating row background color for tables
+  TABLE_COLOR_BACKGROUND_HEADER:
+    value: '{!PALETTE_NEUTRAL_100}'
+    comment: Default background color for table headers
+  TABLE_COLOR_BACKGROUND_HEADER_HOVER:
+    value: '{!PALETTE_NEUTRAL_95}'
+    comment: Hover state for table header cells
+  TABLE_COLOR_BACKGROUND_HEADER_FOCUS:
+    value: '{!PALETTE_NEUTRAL_100}'
+    comment: Focused state for table header cells
+  TABLE_COLOR_BACKGROUND_HEADER_RESIZABLE_HANDLE:
+    value: '{!PALETTE_NEUTRAL_70}'
+    comment: Resizable handle color for table header cells

@@ -1,0 +1,1 @@
+export const spacing1="0.25rem";export const spacing2="0.5rem";export const spacing3="0.75rem";export const spacing4="1rem";export const spacing5="1.5rem";export const spacing6="2rem";export const spacing7="2.5rem";export const spacing8="3rem";export const spacing9="3.5rem";export const spacing10="4rem";export const spacing11="4.5rem";export const spacing12="5rem";

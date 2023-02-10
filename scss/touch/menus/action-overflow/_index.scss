@@ -1,0 +1,49 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+.slds-action-overflow_touch,
+.slds-action-overflow--touch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ($z-index-modal + 1);
+}
+
+.slds-action-overflow_touch__container,
+.slds-action-overflow--touch__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.slds-action-overflow_touch__content,
+.slds-action-overflow--touch__content {
+  padding-top: 33.333%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.slds-action-overflow_touch__body,
+.slds-action-overflow--touch__body {
+  // make sure the content is cut-off mid-text, per spec, so overflow is more apparent
+  position: relative;
+  top: $spacing-x-large;
+  // box-styling
+  background: var(--slds-g-color-neutral-base-100, #{$color-background-alt});
+  box-shadow: $shadow-overlay;
+}
+
+.slds-action-overflow_touch__footer,
+.slds-action-overflow--touch__footer {
+  position: relative;
+  flex-shrink: 0;
+  border-top: $border-width-thin solid var(--slds-g-color-border-base-1, #{$color-border});
+  padding: $spacing-small $spacing-medium;
+  background-color: var(--slds-g-color-neutral-base-95, #{$color-background});
+  box-shadow: $shadow-action-overflow-footer;
+}

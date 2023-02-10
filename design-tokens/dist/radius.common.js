@@ -1,0 +1,1 @@
+module.exports={radiusBorder1:"0.125rem",radiusBorder2:"0.25rem",radiusBorder3:"0.5rem",radiusBorder4:"1rem",radiusBorderCircle:"100%"};

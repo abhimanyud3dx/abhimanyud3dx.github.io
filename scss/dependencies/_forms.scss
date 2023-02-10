@@ -1,0 +1,109 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+@mixin form-input-container {
+  background-color: var(--slds-g-color-neutral-base-100, #{$color-background-input});
+  border: $border-width-thin solid var(--slds-g-color-border-base-4, #{$color-border-input});
+  border-radius: $border-radius-medium;
+  width: 100%;
+}
+
+@mixin form-input-focus {
+  outline: 0;
+  border-color: var(--slds-g-color-brand-base-60, #{$color-border-input-active});
+  background-color: var(--slds-g-color-neutral-base-100, #{$color-background-input-active});
+  box-shadow: $shadow-button-focus;
+}
+
+@mixin form-input-disabled {
+  background-color: var(--slds-g-color-neutral-base-95, #{$color-background-input-disabled});
+  border-color: var(--slds-g-color-border-base-1, #{$color-border-input-disabled});
+  cursor: not-allowed;
+  user-select: none;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+}
+
+@mixin form-input-error($element: null) {
+  @if $element != null {
+
+    #{$element} {
+      background-color: var(--slds-g-color-neutral-base-100, #{$color-background-input});
+      border-color: var(--slds-g-color-error-base-40, #{$color-border-error});
+      box-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 $border-width-thin inset;
+      background-clip: padding-box;
+
+      &:focus,
+      &:active {
+        box-shadow: var(--slds-g-color-error-base-40, #{$color-border-error}) 0 0 0 $border-width-thin inset, $shadow-button-focus;
+      }
+    }
+  }
+}
+
+@mixin form-states {
+  @include form-input-container;
+  transition: border $duration-quickly linear, background-color $duration-quickly linear;
+
+  &:required {
+    box-shadow: none;
+  }
+
+  &:focus,
+  &:active {
+    @include form-input-focus;
+  }
+
+  &[disabled],
+  &.slds-is-disabled {
+    @include form-input-disabled;
+  }
+}
+
+@mixin input {
+  padding-top: 0;
+  padding-right: var(--slds-c-input-spacing-horizontal-end, var(--sds-c-input-spacing-horizontal-end, $spacing-medium));
+  padding-bottom: 0;
+  padding-left: var(--slds-c-input-spacing-horizontal-start, var(--sds-c-input-spacing-horizontal-start, $spacing-small));
+  width: 100%;
+  min-height: calc(#{$height-input} + (#{$border-width-thin} * 2)); // For IE
+  line-height: $height-input;
+  border: $border-width-thin solid var(--slds-c-input-color-border, var(--sds-c-input-color-border, var(--slds-g-color-border-base-4, #{$color-border-input})));
+  border-radius: var(--slds-c-input-radius-border, var(--sds-c-input-radius-border, $border-radius-medium));
+  background-color: var(--slds-c-input-color-background, var(--sds-c-input-color-background, var(--slds-g-color-neutral-base-100, #{$color-background-input})));
+  color: var(--slds-c-input-text-color, var(--sds-c-input-text-color));
+  box-shadow: var(--slds-c-input-shadow, var(--sds-c-input-shadow));
+  transition: border $duration-quickly linear, background-color $duration-quickly linear;
+}
+
+@mixin input-focus-active {
+  /*! @css-var-fallback border-color */
+  --slds-c-input-color-border: var(--slds-c-input-color-border-focus, var(--sds-c-input-color-border-focus, var(--slds-g-color-brand-base-60, #{$color-border-input-active})));
+
+  /*! @css-var-fallback background-color */
+  --slds-c-input-background-color: var(--slds-c-input-color-background-focus, var(--sds-c-input-color-background-focus, var(--slds-g-color-neutral-base-100, #{$color-background-input-active})));
+
+  /*! @css-var-fallback color */
+  --slds-c-input-text-color: var(--slds-c-input-text-color-focus, var(--sds-c-input-text-color-focus));
+
+  /*! @css-var-fallback box-shadow */
+  --slds-c-input-shadow: var(--slds-c-input-shadow-focus, var(--sds-c-input-shadow-focus, 0 0 3px #{$brand-accessible}));
+  outline: 0;
+}
+
+@mixin input-disabled {
+  background-color: var(--slds-g-color-neutral-base-95, #{$color-background-input-disabled});
+  border-color: var(--slds-g-color-border-base-1, #{$color-border-input-disabled});
+  color: var(--slds-g-color-neutral-base-50, #{$color-text-input-disabled});
+  cursor: not-allowed;
+  user-select: none;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+}

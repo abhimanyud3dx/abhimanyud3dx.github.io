@@ -1,0 +1,421 @@
+{
+  "aliases": {},
+  "props": {
+    "sizing-border-1": {
+      "originalValue": "1px",
+      "syntax": "<length>",
+      "name": "sizing-border-1",
+      "value": "1px",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Border size 1."
+    },
+    "sizing-border-2": {
+      "originalValue": "2px",
+      "syntax": "<length>",
+      "name": "sizing-border-2",
+      "value": "2px",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Border size 2."
+    },
+    "sizing-border-3": {
+      "originalValue": "3px",
+      "syntax": "<length>",
+      "name": "sizing-border-3",
+      "value": "3px",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Border size 3."
+    },
+    "sizing-border-4": {
+      "originalValue": "4px",
+      "syntax": "<length>",
+      "name": "sizing-border-4",
+      "value": "4px",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Border size 4."
+    },
+    "sizing-1": {
+      "originalValue": "0.125rem",
+      "syntax": "<length>",
+      "name": "sizing-1",
+      "value": "0.125rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 1."
+    },
+    "sizing-2": {
+      "originalValue": "0.25rem",
+      "syntax": "<length>",
+      "name": "sizing-2",
+      "value": "0.25rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 2."
+    },
+    "sizing-3": {
+      "originalValue": "0.5rem",
+      "syntax": "<length>",
+      "name": "sizing-3",
+      "value": "0.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 3."
+    },
+    "sizing-4": {
+      "originalValue": "0.75rem",
+      "syntax": "<length>",
+      "name": "sizing-4",
+      "value": "0.75rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 4."
+    },
+    "sizing-5": {
+      "originalValue": "1rem",
+      "syntax": "<length>",
+      "name": "sizing-5",
+      "value": "1rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 5."
+    },
+    "sizing-6": {
+      "originalValue": "1.25rem",
+      "syntax": "<length>",
+      "name": "sizing-6",
+      "value": "1.25rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 6."
+    },
+    "sizing-7": {
+      "originalValue": "1.5rem",
+      "syntax": "<length>",
+      "name": "sizing-7",
+      "value": "1.5rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 7."
+    },
+    "sizing-8": {
+      "originalValue": "1.75rem",
+      "syntax": "<length>",
+      "name": "sizing-8",
+      "value": "1.75rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 8."
+    },
+    "sizing-9": {
+      "originalValue": "2rem",
+      "syntax": "<length>",
+      "name": "sizing-9",
+      "value": "2rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 9."
+    },
+    "sizing-10": {
+      "originalValue": "3rem",
+      "syntax": "<length>",
+      "name": "sizing-10",
+      "value": "3rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 10."
+    },
+    "sizing-11": {
+      "originalValue": "4rem",
+      "syntax": "<length>",
+      "name": "sizing-11",
+      "value": "4rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 11."
+    },
+    "sizing-12": {
+      "originalValue": "5rem",
+      "syntax": "<length>",
+      "name": "sizing-12",
+      "value": "5rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 12."
+    },
+    "sizing-13": {
+      "originalValue": "10rem",
+      "syntax": "<length>",
+      "name": "sizing-13",
+      "value": "10rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 13."
+    },
+    "sizing-14": {
+      "originalValue": "15rem",
+      "syntax": "<length>",
+      "name": "sizing-14",
+      "value": "15rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 14."
+    },
+    "sizing-15": {
+      "originalValue": "20rem",
+      "syntax": "<length>",
+      "name": "sizing-15",
+      "value": "20rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 15."
+    },
+    "sizing-16": {
+      "originalValue": "30rem",
+      "syntax": "<length>",
+      "name": "sizing-16",
+      "value": "30rem",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Size 16."
+    },
+    "sizing-content-1": {
+      "originalValue": "20ch",
+      "syntax": "<length>",
+      "name": "sizing-content-1",
+      "value": "20ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Content Size 1."
+    },
+    "sizing-content-2": {
+      "originalValue": "45ch",
+      "syntax": "<length>",
+      "name": "sizing-content-2",
+      "value": "45ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Content Size 2."
+    },
+    "sizing-content-3": {
+      "originalValue": "60ch",
+      "syntax": "<length>",
+      "name": "sizing-content-3",
+      "value": "60ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Content Size 3."
+    },
+    "sizing-heading-1": {
+      "originalValue": "20ch",
+      "syntax": "<length>",
+      "name": "sizing-heading-1",
+      "value": "20ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Header content size 1."
+    },
+    "sizing-heading-2": {
+      "originalValue": "25ch",
+      "syntax": "<length>",
+      "name": "sizing-heading-2",
+      "value": "25ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Header content size 2."
+    },
+    "sizing-heading-3": {
+      "originalValue": "35ch",
+      "syntax": "<length>",
+      "name": "sizing-heading-3",
+      "value": "35ch",
+      "scope": "global",
+      "cssProperties": [
+        "border-width",
+        "width"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "sizing",
+      "comment": "Header content size 3."
+    }
+  }
+}

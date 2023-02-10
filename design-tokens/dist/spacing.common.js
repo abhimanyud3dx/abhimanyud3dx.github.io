@@ -1,0 +1,1 @@
+module.exports={spacing1:"0.25rem",spacing2:"0.5rem",spacing3:"0.75rem",spacing4:"1rem",spacing5:"1.5rem",spacing6:"2rem",spacing7:"2.5rem",spacing8:"3rem",spacing9:"3.5rem",spacing10:"4rem",spacing11:"4.5rem",spacing12:"5rem"};

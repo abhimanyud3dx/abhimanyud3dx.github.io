@@ -1,0 +1,243 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+@import 'deprecate';
+
+/**
+* @summary Initializes card
+* @name base
+* @selector .slds-card
+* @restrict article, div, section
+* @support dev-ready
+* @variant
+*/
+.slds-card {
+  position: relative;
+  padding-top: var(--slds-c-card-spacing-block-start, var(--sds-c-card-spacing-block-start, var(--sds-c-card-spacing-block, 0)));
+  padding-right: var(--slds-c-card-spacing-inline-end, var(--sds-c-card-spacing-inline-end, var(--sds-c-card-spacing-inline, 0)));
+  padding-bottom: var(--slds-c-card-spacing-block-end, var(--sds-c-card-spacing-block-end, var(--sds-c-card-spacing-block, 0)));
+  padding-left: var(--slds-c-card-spacing-inline-start, var(--sds-c-card-spacing-inline-start, var(--sds-c-card-spacing-inline, 0)));
+  background: var(--slds-c-card-color-background, var(--sds-c-card-color-background,
+    var(--slds-g-color-neutral-base-100, #{$card-color-background})));
+  border-width: var(--slds-c-card-sizing-border, var(--sds-c-card-sizing-border, $border-width-thin));
+  border-style: solid;
+  border-color: var(--slds-c-card-color-border, var(--sds-c-card-color-border,
+    var(--slds-g-color-border-base-1, #{$card-color-border})));
+  border-radius: var(--slds-c-card-radius-border, var(--sds-c-card-radius-border, $border-radius-medium));
+  background-clip: padding-box;
+  box-shadow: var(--slds-c-card-shadow, var(--sds-c-card-shadow, $card-shadow));
+  color: var(--slds-c-card-text-color, var(--sds-c-card-text-color));
+
+  // Adds spacing between cards
+  + .slds-card {
+    margin-top: $var-spacing-vertical-medium;
+  }
+}
+
+/**
+ * @summary Initializes card header
+ * @selector .slds-card__header
+ * @restrict .slds-card div
+ */
+.slds-card__header {
+  padding-top:
+    var(--slds-c-card-header-spacing-block-start,
+    var(--sds-c-card-header-spacing-block-start,
+    var(--slds-c-card-header-spacing-block,
+    var(--sds-c-card-header-spacing-block, $var-spacing-vertical-small))));
+  padding-right:
+    var(--slds-c-card-header-spacing-inline-end,
+    var(--sds-c-card-header-spacing-inline-end,
+    var(--slds-c-card-header-spacing-inline,
+    var(--sds-c-card-header-spacing-inline, $var-spacing-horizontal-medium))));
+  padding-bottom:
+    var(--slds-c-card-header-spacing-block-end,
+    var(--sds-c-card-header-spacing-block-end,
+    var(--slds-c-card-header-spacing-block,
+    var(--sds-c-card-header-spacing-block, 0))));
+  padding-left:
+    var(--slds-c-card-header-spacing-inline-start,
+    var(--sds-c-card-header-spacing-inline-start,
+    var(--slds-c-card-header-spacing-inline,
+    var(--sds-c-card-header-spacing-inline, $var-spacing-horizontal-medium))));
+  margin: 0 0 var(--slds-c-card-header-spacing-block-end, var(--sds-c-card-header-spacing-block-end, $var-spacing-vertical-small));
+}
+
+/**
+ * @summary Title element within card header
+ * @selector .slds-card__header-title
+ * @restrict .slds-card__header h2
+ */
+.slds-card__header-title {
+  display: flex;
+  font-size: var(--slds-c-card-heading-font-size, var(--sds-c-card-heading-font-size, $var-font-size-5));
+  font-weight: var(--slds-c-card-heading-font-weight, var(--sds-c-card-heading-font-weight, $card-font-weight));
+  line-height: $line-height-heading;
+}
+
+/**
+ * @summary Actionable element within the card header title
+ * @selector .slds-card__header-link
+ * @restrict .slds-card__header h2 a
+ */
+.slds-card__header-link {
+  color: inherit;
+  font-weight: var(--slds-c-card-heading-font-weight, var(--sds-c-card-heading-font-weight, $card-font-weight));
+}
+
+/**
+ * @summary Initializes card body
+ * @selector .slds-card__body
+ * @restrict .slds-card div
+ */
+.slds-card__body {
+  margin-top:
+    var(--slds-c-card-body-spacing-block-start,
+    var(--sds-c-card-body-spacing-block-start,
+    var(--slds-c-card-body-spacing-block,
+    var(--sds-c-card-body-spacing-block, $var-spacing-vertical-small))));
+  margin-bottom:
+    var(--slds-c-card-body-spacing-block-end,
+    var(--sds-c-card-body-spacing-block-end,
+    var(--slds-c-card-body-spacing-block,
+    var(--sds-c-card-body-spacing-block, $var-spacing-vertical-small))));
+  padding-right:
+    var(--slds-c-card-body-spacing-inline-end,
+    var(--sds-c-card-body-spacing-inline-end,
+    var(--slds-c-card-body-spacing-inline,
+    var(--sds-c-card-body-spacing-inline))));
+  padding-left:
+    var(--slds-c-card-body-spacing-inline-start,
+    var(--sds-c-card-body-spacing-inline-start,
+    var(--slds-c-card-body-spacing-inline,
+    var(--sds-c-card-body-spacing-inline))));
+}
+
+/**
+ * @summary Apply the same spacing found on the card header to the card body
+ * @selector .slds-card__body_inner
+ * @restrict .slds-card__body
+ */
+.slds-card__body_inner,
+.slds-card__body--inner {
+  /*! @css-var-fallback padding-right */
+  --slds-c-card-body-spacing-inline-end: var(--sds-c-card-body-spacing-inline-end, var(--sds-c-card-body-spacing-inline, #{$var-spacing-horizontal-medium}));
+
+  /*! @css-var-fallback padding-left */
+  --slds-c-card-body-spacing-inline-start: var(--sds-c-card-body-spacing-inline-start, var(--sds-c-card-body-spacing-inline, #{$var-spacing-horizontal-medium}));
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.slds-card__body:empty,
+.slds-card__footer:empty {
+  display: none;
+}
+
+/**
+ * @summary Initializes card footer
+ * @selector .slds-card__footer
+ * @restrict .slds-card footer
+ */
+.slds-card__footer {
+  padding-top:
+    var(--slds-c-card-footer-spacing-block-start,
+    var(--sds-c-card-footer-spacing-block-start,
+    var(--slds-c-card-footer-spacing-block,
+    var(--sds-c-card-footer-spacing-block, $var-spacing-vertical-small))));
+  padding-right:
+    var(--slds-c-card-footer-spacing-inline-end,
+    var(--sds-c-card-footer-spacing-inline-end,
+    var(--slds-c-card-footer-spacing-inline,
+    var(--sds-c-card-footer-spacing-inline, $var-spacing-horizontal-medium))));
+  padding-bottom:
+    var(--slds-c-card-footer-spacing-block-end,
+    var(--sds-c-card-footer-spacing-block-end,
+    var(--slds-c-card-footer-spacing-block,
+    var(--sds-c-card-footer-spacing-block, $var-spacing-vertical-small))));
+  padding-left:
+    var(--slds-c-card-footer-spacing-inline-start,
+    var(--sds-c-card-footer-spacing-inline-start,
+    var(--slds-c-card-footer-spacing-inline,
+    var(--sds-c-card-footer-spacing-inline, $var-spacing-horizontal-medium))));
+  margin-top: var(--slds-c-card-footer-spacing-block-start, var(--sds-c-card-footer-spacing-block-start, $var-spacing-vertical-small));
+  text-align: var(--slds-c-card-footer-text-align, var(--sds-c-card-footer-text-align, $card-footer-text-align));
+  font-size: var(--slds-c-card-footer-font-size, var(--sds-c-card-footer-font-size, $font-size-3));
+  border-top-width: var(--slds-c-card-footer-sizing-border, var(--sds-c-card-footer-sizing-border, $border-width-thin));
+  border-top-style: solid;
+  border-top-color: var(--slds-c-card-footer-color-border,
+    var(--sds-c-card-footer-color-border, var(--slds-g-color-border-base-1, #{$card-footer-color-border})));
+}
+
+/**
+* @summary Actionable element within card footer
+* @selector .slds-card__footer-action
+* @restrict .slds-card__footer a
+*/
+.slds-card__footer-action {
+  display: block;
+}
+
+/**
+ * @summary Use class if card consumes any form of a tile
+ * @selector .slds-card__tile
+ * @restrict .slds-tile
+ */
+.slds-card__tile {
+  margin-top: $var-spacing-vertical-small;
+}
+
+// Internal
+.slds-region__pinned-left,
+.slds-region__pinned-right {
+
+  .slds-card,
+  .slds-card-wrapper,
+  .slds-card_boundary,
+  .slds-tabs_card {
+    border-radius: 0;
+    border: 0;
+    border-bottom: $border-width-thin solid var(--slds-g-color-border-base-1, #{$color-border});
+    box-shadow: none;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+// These .slds-card-wrapper classes all give us the ability to add a class
+// that doesn't exist in Communities to add a card look in different
+// circumstances. It can also be used to combine several cards into a one
+// card look. This class does not react to the .slds-card_boundary.
+
+/**
+ * @name wrapper
+ * @summary Removes the card look from nested cards and pulls them to the boundary of the card wrapper, making the nested cards look like they are inside of one card
+ * @selector .slds-card-wrapper
+ * @restrict div
+ * @support dev-ready
+ * @variant
+ */
+.slds-card-wrapper {
+  padding: $var-spacing-medium;
+  background: var(--slds-c-card-color-background, var(--sds-c-card-color-background,
+    var(--slds-g-color-neutral-base-100, #{$card-color-background})));
+  border-width: var(--slds-c-card-sizing-border, var(--sds-c-card-sizing-border, $border-width-thin));
+  border-style: solid;
+  border-color: var(--slds-c-card-color-border, var(--sds-c-card-color-border,
+    var(--slds-g-color-border-base-1, #{$card-color-border})));
+  border-radius: var(--slds-c-card-radius-border, var(--sds-c-card-radius-border, $border-radius-medium));
+  background-clip: padding-box;
+  box-shadow: var(--slds-c-card-shadow, var(--sds-c-card-shadow, $card-shadow));
+
+  .slds-card__header,
+  .slds-card__body,
+  .slds-card__footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@import 'blame';

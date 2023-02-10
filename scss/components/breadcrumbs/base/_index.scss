@@ -1,0 +1,58 @@
+// Lightning Design System 2.20.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+/**
+ * @summary Create breadcrumbs component
+ * @name base
+ * @selector .slds-breadcrumb
+ * @restrict ol
+ * @support dev-ready
+ * @variant
+ */
+
+.slds-breadcrumb {
+  /**
+   * @summary Item of the breadcrumb list
+   * @selector .slds-breadcrumb__item
+   * @restrict .slds-breadcrumb li
+   */
+  .slds-list__item,
+  .slds-breadcrumb__item {
+    position: relative;
+
+    &:before {
+      content: '\003E';
+      position: absolute;
+      left: (($spacing-x-small * 0.5) * -1);
+    }
+
+    > a {
+      display: block;
+      padding-top: 0;
+      padding-right: var(--slds-c-breadcrumbs-spacing-inline-end, var(--sds-c-breadcrumbs-spacing-inline-end, $spacing-x-small));
+      padding-bottom: 0;
+      padding-left: var(--slds-c-breadcrumbs-spacing-inline-start, var(--sds-c-breadcrumbs-spacing-inline-start, $spacing-x-small));
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:first-child {
+
+      > a {
+        /*! @css-var-fallback padding-left */
+        --slds-c-breadcrumbs-spacing-inline-start: 0;
+      }
+
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+  .slds-dropdown-trigger {
+    margin-right: var(--slds-c-breadcrumbs-spacing-inline-end, var(--sds-c-breadcrumbs-spacing-inline-end, $spacing-x-small));
+  }
+}

@@ -1,0 +1,5 @@
+// Lightning Design System 2.20.1
+.slds-button {
+  --slds-c-button-line-height: #{border-box-line-height($height-tappable)};
+  font-weight: $font-weight-bold;
+}

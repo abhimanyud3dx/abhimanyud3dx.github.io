@@ -1,0 +1,534 @@
+{
+  "aliases": {
+    "FONT_SIZE_1": {
+      "value": "1.125rem"
+    },
+    "FONT_SIZE_2": {
+      "value": "1.266rem"
+    },
+    "FONT_SIZE_3": {
+      "value": "1.424rem"
+    },
+    "FONT_SIZE_4": {
+      "value": "1.602rem"
+    },
+    "FONT_SIZE_5": {
+      "value": "1.802rem"
+    },
+    "FONT_SIZE_6": {
+      "value": "2.027rem"
+    },
+    "FONT_SIZE_7": {
+      "value": "2.281rem"
+    },
+    "FONT_SIZE_8": {
+      "value": "2.566rem"
+    },
+    "FONT_SIZE_9": {
+      "value": "2.887rem"
+    },
+    "FONT_SIZE_10": {
+      "value": "3.247rem"
+    },
+    "FONT_SIZE_NEG_1": {
+      "value": "0.875rem"
+    },
+    "FONT_SIZE_NEG_2": {
+      "value": "0.8125rem"
+    },
+    "FONT_SIZE_NEG_3": {
+      "value": "0.75rem"
+    },
+    "FONT_SIZE_NEG_4": {
+      "value": "0.625rem"
+    },
+    "FONT_SIZE_RATIO": {
+      "value": "1.125"
+    },
+    "FONT_SIZE_BASE": {
+      "value": "1rem"
+    }
+  },
+  "props": {
+    "font-family": {
+      "originalValue": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "syntax": "<length>",
+      "name": "font-family",
+      "value": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "scope": "global",
+      "cssProperties": [
+        "font-family"
+      ],
+      "inherits": true,
+      "type": "raw",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "System font stack for your application."
+    },
+    "font-family-monospace": {
+      "originalValue": "Consolas, Menlo, Monaco, Courier, monospace",
+      "syntax": "<length>",
+      "name": "font-family-monospace",
+      "value": "Consolas, Menlo, Monaco, Courier, monospace",
+      "scope": "global",
+      "cssProperties": [
+        "font-family"
+      ],
+      "inherits": true,
+      "type": "raw",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Monospace font stack for your application."
+    },
+    "font-weight-bold": {
+      "originalValue": "bold",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-bold",
+      "value": "bold",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Bold font-weight, use to increase emphasis."
+    },
+    "font-weight-1": {
+      "originalValue": "100",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-1",
+      "value": "100",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 1"
+    },
+    "font-weight-2": {
+      "originalValue": "200",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-2",
+      "value": "200",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 2"
+    },
+    "font-weight-3": {
+      "originalValue": "300",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-3",
+      "value": "300",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 3"
+    },
+    "font-weight-4": {
+      "originalValue": "400",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-4",
+      "value": "400",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 4"
+    },
+    "font-weight-5": {
+      "originalValue": "500",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-5",
+      "value": "500",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 5"
+    },
+    "font-weight-6": {
+      "originalValue": "600",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-6",
+      "value": "600",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 6"
+    },
+    "font-weight-7": {
+      "originalValue": "700",
+      "syntax": "<custom-ident>",
+      "name": "font-weight-7",
+      "value": "700",
+      "scope": "global",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "inherits": false,
+      "type": "any",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Font weight 7"
+    },
+    "font-lineheight": {
+      "originalValue": "1.5",
+      "syntax": "<number>",
+      "name": "font-lineheight",
+      "value": "1.5",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Default line-height for your application."
+    },
+    "font-lineheight-1": {
+      "originalValue": "1",
+      "syntax": "<number>",
+      "name": "font-lineheight-1",
+      "value": "1",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 1."
+    },
+    "font-lineheight-2": {
+      "originalValue": "1.25",
+      "syntax": "<number>",
+      "name": "font-lineheight-2",
+      "value": "1.25",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 2."
+    },
+    "font-lineheight-3": {
+      "originalValue": "1.375",
+      "syntax": "<number>",
+      "name": "font-lineheight-3",
+      "value": "1.375",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 3."
+    },
+    "font-lineheight-4": {
+      "originalValue": "1.5",
+      "syntax": "<number>",
+      "name": "font-lineheight-4",
+      "value": "1.5",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 4."
+    },
+    "font-lineheight-5": {
+      "originalValue": "1.75",
+      "syntax": "<number>",
+      "name": "font-lineheight-5",
+      "value": "1.75",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 5."
+    },
+    "font-lineheight-6": {
+      "originalValue": "2",
+      "syntax": "<number>",
+      "name": "font-lineheight-6",
+      "value": "2",
+      "scope": "global",
+      "cssProperties": [
+        "line-height"
+      ],
+      "inherits": true,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Line-height 6."
+    },
+    "font-size-base": {
+      "originalValue": "{!FONT_SIZE_BASE}",
+      "syntax": "<length>",
+      "name": "font-size-base",
+      "value": "1rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Default font-size for your application."
+    },
+    "font-scale-neg-4": {
+      "originalValue": "{!FONT_SIZE_NEG_4}",
+      "syntax": "<length>",
+      "name": "font-scale-neg-4",
+      "value": "0.625rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 4 stops smaller than the base."
+    },
+    "font-scale-neg-3": {
+      "originalValue": "{!FONT_SIZE_NEG_3}",
+      "syntax": "<length>",
+      "name": "font-scale-neg-3",
+      "value": "0.75rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 3 stops smaller than the base."
+    },
+    "font-scale-neg-2": {
+      "originalValue": "{!FONT_SIZE_NEG_2}",
+      "syntax": "<length>",
+      "name": "font-scale-neg-2",
+      "value": "0.8125rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 2 stops smaller than the base."
+    },
+    "font-scale-neg-1": {
+      "originalValue": "{!FONT_SIZE_NEG_1}",
+      "syntax": "<length>",
+      "name": "font-scale-neg-1",
+      "value": "0.875rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 1 stop smaller than the base."
+    },
+    "font-scale-1": {
+      "originalValue": "{!FONT_SIZE_1}",
+      "syntax": "<length>",
+      "name": "font-scale-1",
+      "value": "1.125rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 1 stop bigger than the base."
+    },
+    "font-scale-2": {
+      "originalValue": "{!FONT_SIZE_2}",
+      "syntax": "<length>",
+      "name": "font-scale-2",
+      "value": "1.266rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 2 stops bigger than the base."
+    },
+    "font-scale-3": {
+      "originalValue": "{!FONT_SIZE_3}",
+      "syntax": "<length>",
+      "name": "font-scale-3",
+      "value": "1.424rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 3 stops bigger than the base."
+    },
+    "font-scale-4": {
+      "originalValue": "{!FONT_SIZE_4}",
+      "syntax": "<length>",
+      "name": "font-scale-4",
+      "value": "1.602rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 4 stops bigger than the base."
+    },
+    "font-scale-5": {
+      "originalValue": "{!FONT_SIZE_5}",
+      "syntax": "<length>",
+      "name": "font-scale-5",
+      "value": "1.802rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 5 stops bigger than the base."
+    },
+    "font-scale-6": {
+      "originalValue": "{!FONT_SIZE_6}",
+      "syntax": "<length>",
+      "name": "font-scale-6",
+      "value": "2.027rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 6 stops bigger than the base."
+    },
+    "font-scale-7": {
+      "originalValue": "{!FONT_SIZE_7}",
+      "syntax": "<length>",
+      "name": "font-scale-7",
+      "value": "2.281rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 7 stops bigger than the base."
+    },
+    "font-scale-8": {
+      "originalValue": "{!FONT_SIZE_8}",
+      "syntax": "<length>",
+      "name": "font-scale-8",
+      "value": "2.566rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 8 stops bigger than the base."
+    },
+    "font-scale-9": {
+      "originalValue": "{!FONT_SIZE_9}",
+      "syntax": "<length>",
+      "name": "font-scale-9",
+      "value": "2.887rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 9 stops bigger than the base."
+    },
+    "font-scale-10": {
+      "originalValue": "{!FONT_SIZE_10}",
+      "syntax": "<length>",
+      "name": "font-scale-10",
+      "value": "3.247rem",
+      "scope": "global",
+      "cssProperties": [
+        "font-size"
+      ],
+      "inherits": false,
+      "type": "number",
+      "namespace": "sds",
+      "category": "font",
+      "comment": "Scaled font-size that is 10 stops bigger than the base."
+    }
+  }
+}

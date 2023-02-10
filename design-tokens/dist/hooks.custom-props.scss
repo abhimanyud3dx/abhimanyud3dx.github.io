@@ -1,0 +1,617 @@
+.slds-wcag {
+    /* Neutral Base 100 - if used as a background, please use Neutral Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-100: #ffffff;
+    /* Neutral Base 95 - if used as a background, please use Neutral Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-95: #f3f3f3;
+    /* Neutral Base 90 - if used as a background, please use Neutral Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-90: #e5e5e5;
+    /* Neutral Base 80 - if used as a background, please use Neutral Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-80: #c9c9c9;
+    /* Neutral Base 70 - if used as a background, please use Neutral Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-70: #aeaeae;
+    /* Neutral Base 65 - if used as a background, please use Neutral Base 15-10 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-65: #a0a0a0;
+    /* Neutral Base 60 - if used as a background, please use Neutral Base 100 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-60: #939393;
+    /* Neutral Base 50 - if used as a background, please use Neutral Base 100-95 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-50: #747474;
+    /* Neutral Base 40 - if used as a background, please use Neutral Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-40: #5c5c5c;
+    /* Neutral Base 30 - if used as a background, please use Neutral Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-30: #444444;
+    /* Neutral Base 20 - if used as a background, please use Neutral Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-20: #2e2e2e;
+    /* Neutral Base 15 - if used as a background, please use Neutral Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-15: #242424;
+    /* Neutral Base 10 - if used as a background, please use Neutral Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-neutral-base-10: #181818;
+    /* Brand Base 100 - if used as a background, please use Brand Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-100: #ffffff;
+    /* Brand Base 95 - if used as a background, please use Brand Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-95: #eef4ff;
+    /* Brand Base 90 - if used as a background, please use Brand Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-90: #d8e6fe;
+    /* Brand Base 80 - if used as a background, please use Brand Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-80: #aacbff;
+    /* Brand Base 70 - if used as a background, please use Brand Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-70: #78b0fd;
+    /* Brand Base 65 - if used as a background, please use Brand Base 15-10 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-65: #57a3fd;
+    /* Brand Base 60 - if used as a background, please use Brand Base 100 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-60: #1b96ff;
+    /* Brand Base 50 - if used as a background, please use Brand Base 100-95 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-50: #0176d3;
+    /* Brand Base 40 - if used as a background, please use Brand Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-40: #0b5cab;
+    /* Brand Base 30 - if used as a background, please use Brand Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-30: #014486;
+    /* Brand Base 20 - if used as a background, please use Brand Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-20: #032d60;
+    /* Brand Base 15 - if used as a background, please use Brand Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-15: #03234d;
+    /* Brand Base 10 - if used as a background, please use Brand Base 100-65 to meet accessibility guidelines. */
+    --slds-g-color-brand-base-10: #001639;
+    /* Error Base 100 - if used as a background, please use Error Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-100: #ffffff;
+    /* Error Base 90 - if used as a background, please use Error Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-90: #feded8;
+    /* Error Base 80 - if used as a background, please use Error Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-80: #feb8ab;
+    /* Error Base 70 - if used as a background, please use Error Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-70: #fe8f7d;
+    /* Error Base 60 - if used as a background, please use Error Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-error-base-60: #fe5c4c;
+    /* Error Base 50 - if used as a background, please use Error Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-error-base-50: #ea001e;
+    /* Error Base 40 - if used as a background, please use Error Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-error-base-40: #ba0517;
+    /* Error Base 30 - if used as a background, please use Error Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-error-base-30: #8e030f;
+    /* Error Base 20 - if used as a background, please use Error Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-error-base-20: #640103;
+    /* Error Base 10 - if used as a background, please use Error Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-error-base-10: #300c01;
+    /* Warning Base 100 - if used as a background, please use Warning Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-100: #ffffff;
+    /* Warning Base 90 - if used as a background, please use Warning Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-90: #fedfd0;
+    /* Warning Base 80 - if used as a background, please use Warning Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-80: #ffba90;
+    /* Warning Base 70 - if used as a background, please use Warning Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-70: #fe9339;
+    /* Warning Base 60 - if used as a background, please use Warning Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-60: #dd7a01;
+    /* Warning Base 50 - if used as a background, please use Warning Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-50: #a96404;
+    /* Warning Base 40 - if used as a background, please use Warning Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-40: #825101;
+    /* Warning Base 30 - if used as a background, please use Warning Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-30: #5f3e02;
+    /* Warning Base 20 - if used as a background, please use Warning Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-20: #3e2b02;
+    /* Warning Base 10 - if used as a background, please use Warning Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-warning-base-10: #201600;
+    /* Success Base 100 - if used as a background, please use Success Base 60-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-100: #ffffff;
+    /* Success Base 90 - if used as a background, please use Success Base 50-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-90: #cdefc4;
+    /* Success Base 80 - if used as a background, please use Success Base 40-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-80: #91db8b;
+    /* Success Base 70 - if used as a background, please use Success Base 30-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-70: #45c65a;
+    /* Success Base 60 - if used as a background, please use Success Base 20-10 to meet accessibility guidelines. */
+    --slds-g-color-success-base-60: #3ba755;
+    /* Success Base 50 - if used as a background, please use Success Base 100-90 to meet accessibility guidelines. */
+    --slds-g-color-success-base-50: #2e844a;
+    /* Success Base 40 - if used as a background, please use Success Base 100-80 to meet accessibility guidelines. */
+    --slds-g-color-success-base-40: #396547;
+    /* Success Base 30 - if used as a background, please use Success Base 100-70 to meet accessibility guidelines. */
+    --slds-g-color-success-base-30: #194e31;
+    /* Success Base 20 - if used as a background, please use Success Base 100-60 to meet accessibility guidelines. */
+    --slds-g-color-success-base-20: #1C3326;
+    /* Success Base 10 - if used as a background, please use Success Base 100-50 to meet accessibility guidelines. */
+    --slds-g-color-success-base-10: #071b12;
+    /* Nuetral border color for UI elements. */
+    --slds-g-color-border-base-1: #c9c9c9;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-2: #aeaeae;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-3: #939393;
+    /* Neutral border color for UI elements. */
+    --slds-g-color-border-base-4: #747474;
+    /* Brand border color for UI elements. */
+    --slds-g-color-border-brand-1: #78b0fd;
+    /* Alternate brand border color for UI elements. */
+    --slds-g-color-border-brand-2: #1b96ff;
+    /* Default color for hyperlinks. */
+    --slds-g-link-color: #0b5cab;
+    /* Default color on hover for hyperlinks. */
+    --slds-g-link-color-hover: #014486;
+    /* Default color on focus for hyperlinks. */
+    --slds-g-link-color-focus: #014486;
+    /* Default color on active for hyperlinks. */
+    --slds-g-link-color-active: #032d60;
+    /* Blue 10 */
+    --slds-g-color-palette-blue-10: #001639;
+    /* Blue 15 */
+    --slds-g-color-palette-blue-15: #03234d;
+    /* Blue 20 */
+    --slds-g-color-palette-blue-20: #032d60;
+    /* Blue 30 */
+    --slds-g-color-palette-blue-30: #014486;
+    /* Blue 40 */
+    --slds-g-color-palette-blue-40: #0b5cab;
+    /* Blue 50 */
+    --slds-g-color-palette-blue-50: #0176d3;
+    /* Blue 60 */
+    --slds-g-color-palette-blue-60: #1b96ff;
+    /* Blue 65 */
+    --slds-g-color-palette-blue-65: #57a3fd;
+    /* Blue 70 */
+    --slds-g-color-palette-blue-70: #78b0fd;
+    /* Blue 80 */
+    --slds-g-color-palette-blue-80: #aacbff;
+    /* Blue 90 */
+    --slds-g-color-palette-blue-90: #d8e6fe;
+    /* Blue 95 */
+    --slds-g-color-palette-blue-95: #eef4ff;
+    /* Cloud Blue 10 */
+    --slds-g-color-palette-cloud-blue-10: #001a28;
+    /* Cloud Blue 15 */
+    --slds-g-color-palette-cloud-blue-15: #0a2636;
+    /* Cloud Blue 20 */
+    --slds-g-color-palette-cloud-blue-20: #023248;
+    /* Cloud Blue 30 */
+    --slds-g-color-palette-cloud-blue-30: #084968;
+    /* Cloud Blue 40 */
+    --slds-g-color-palette-cloud-blue-40: #05628a;
+    /* Cloud Blue 50 */
+    --slds-g-color-palette-cloud-blue-50: #107cad;
+    /* Cloud Blue 60 */
+    --slds-g-color-palette-cloud-blue-60: #0d9dda;
+    /* Cloud Blue 65 */
+    --slds-g-color-palette-cloud-blue-65: #08abed;
+    /* Cloud Blue 70 */
+    --slds-g-color-palette-cloud-blue-70: #1ab9ff;
+    /* Cloud Blue 80 */
+    --slds-g-color-palette-cloud-blue-80: #90d0fe;
+    /* Cloud Blue 90 */
+    --slds-g-color-palette-cloud-blue-90: #cfe9fe;
+    /* Cloud Blue 95 */
+    --slds-g-color-palette-cloud-blue-95: #eaf5fe;
+    /* Green 10 */
+    --slds-g-color-palette-green-10: #071b12;
+    /* Green 15 */
+    --slds-g-color-palette-green-15: #0c2912;
+    /* Green 20 */
+    --slds-g-color-palette-green-20: #1C3326;
+    /* Green 30 */
+    --slds-g-color-palette-green-30: #194e31;
+    /* Green 40 */
+    --slds-g-color-palette-green-40: #396547;
+    /* Green 50 */
+    --slds-g-color-palette-green-50: #2e844a;
+    /* Green 60 */
+    --slds-g-color-palette-green-60: #3ba755;
+    /* Green 65 */
+    --slds-g-color-palette-green-65: #41b658;
+    /* Green 70 */
+    --slds-g-color-palette-green-70: #45c65a;
+    /* Green 80 */
+    --slds-g-color-palette-green-80: #91db8b;
+    /* Green 90 */
+    --slds-g-color-palette-green-90: #cdefc4;
+    /* Green 95 */
+    --slds-g-color-palette-green-95: #ebf7e6;
+    /* Hot Orange 10 */
+    --slds-g-color-palette-hot-orange-10: #281202;
+    /* Hot Orange 15 */
+    --slds-g-color-palette-hot-orange-15: #421604;
+    /* Hot Orange 20 */
+    --slds-g-color-palette-hot-orange-20: #4A2413;
+    /* Hot Orange 30 */
+    --slds-g-color-palette-hot-orange-30: #7e2600;
+    /* Hot Orange 40 */
+    --slds-g-color-palette-hot-orange-40: #aa3001;
+    /* Hot Orange 50 */
+    --slds-g-color-palette-hot-orange-50: #d83a00;
+    /* Hot Orange 60 */
+    --slds-g-color-palette-hot-orange-60: #ff5d2d;
+    /* Hot Orange 65 */
+    --slds-g-color-palette-hot-orange-65: #ff784f;
+    /* Hot Orange 70 */
+    --slds-g-color-palette-hot-orange-70: #ff906e;
+    /* Hot Orange 80 */
+    --slds-g-color-palette-hot-orange-80: #feb9a5;
+    /* Hot Orange 90 */
+    --slds-g-color-palette-hot-orange-90: #ffded5;
+    /* Hot Orange 95 */
+    --slds-g-color-palette-hot-orange-95: #fef1ed;
+    /* Indigo 10 */
+    --slds-g-color-palette-indigo-10: #200647;
+    /* Indigo 15 */
+    --slds-g-color-palette-indigo-15: #1f0974;
+    /* Indigo 20 */
+    --slds-g-color-palette-indigo-20: #321D71;
+    /* Indigo 30 */
+    --slds-g-color-palette-indigo-30: #2f2cb7;
+    /* Indigo 40 */
+    --slds-g-color-palette-indigo-40: #3a49da;
+    /* Indigo 50 */
+    --slds-g-color-palette-indigo-50: #5867e8;
+    /* Indigo 60 */
+    --slds-g-color-palette-indigo-60: #7f8ced;
+    /* Indigo 65 */
+    --slds-g-color-palette-indigo-65: #8e9bef;
+    /* Indigo 70 */
+    --slds-g-color-palette-indigo-70: #9ea9f1;
+    /* Indigo 80 */
+    --slds-g-color-palette-indigo-80: #bec7f6;
+    /* Indigo 90 */
+    --slds-g-color-palette-indigo-90: #e0e5f8;
+    /* Indigo 95 */
+    --slds-g-color-palette-indigo-95: #f1f3fb;
+    /* Orange 10 */
+    --slds-g-color-palette-orange-10: #201600;
+    /* Orange 15 */
+    --slds-g-color-palette-orange-15: #371e03;
+    /* Orange 20 */
+    --slds-g-color-palette-orange-20: #3e2b02;
+    /* Orange 30 */
+    --slds-g-color-palette-orange-30: #5f3e02;
+    /* Orange 40 */
+    --slds-g-color-palette-orange-40: #825101;
+    /* Orange 50 */
+    --slds-g-color-palette-orange-50: #a96404;
+    /* Orange 60 */
+    --slds-g-color-palette-orange-60: #dd7a01;
+    /* Orange 65 */
+    --slds-g-color-palette-orange-65: #f38303;
+    /* Orange 70 */
+    --slds-g-color-palette-orange-70: #fe9339;
+    /* Orange 80 */
+    --slds-g-color-palette-orange-80: #ffba90;
+    /* Orange 90 */
+    --slds-g-color-palette-orange-90: #fedfd0;
+    /* Orange 95 */
+    --slds-g-color-palette-orange-95: #fff1ea;
+    /* Pink 10 */
+    --slds-g-color-palette-pink-10: #370114;
+    /* Pink 15 */
+    --slds-g-color-palette-pink-15: #4b0620;
+    /* Pink 20 */
+    --slds-g-color-palette-pink-20: #61022a;
+    /* Pink 30 */
+    --slds-g-color-palette-pink-30: #8a033e;
+    /* Pink 40 */
+    --slds-g-color-palette-pink-40: #b60554;
+    /* Pink 50 */
+    --slds-g-color-palette-pink-50: #e3066a;
+    /* Pink 60 */
+    --slds-g-color-palette-pink-60: #ff538a;
+    /* Pink 65 */
+    --slds-g-color-palette-pink-65: #fe7298;
+    /* Pink 70 */
+    --slds-g-color-palette-pink-70: #fe8aa7;
+    /* Pink 80 */
+    --slds-g-color-palette-pink-80: #fdb6c5;
+    /* Pink 90 */
+    --slds-g-color-palette-pink-90: #fddde3;
+    /* Pink 95 */
+    --slds-g-color-palette-pink-95: #fef0f3;
+    /* Purple 10 */
+    --slds-g-color-palette-purple-10: #240643;
+    /* Purple 15 */
+    --slds-g-color-palette-purple-15: #300b60;
+    /* Purple 20 */
+    --slds-g-color-palette-purple-20: #401075;
+    /* Purple 30 */
+    --slds-g-color-palette-purple-30: #5a1ba9;
+    /* Purple 40 */
+    --slds-g-color-palette-purple-40: #7526e3;
+    /* Purple 50 */
+    --slds-g-color-palette-purple-50: #9050e9;
+    /* Purple 60 */
+    --slds-g-color-palette-purple-60: #ad7bee;
+    /* Purple 65 */
+    --slds-g-color-palette-purple-65: #b78def;
+    /* Purple 70 */
+    --slds-g-color-palette-purple-70: #c29ef1;
+    /* Purple 80 */
+    --slds-g-color-palette-purple-80: #D7BFF2;
+    /* Purple 90 */
+    --slds-g-color-palette-purple-90: #ece1f9;
+    /* Purple 95 */
+    --slds-g-color-palette-purple-95: #f6f2fb;
+    /* Red 10 */
+    --slds-g-color-palette-red-10: #300c01;
+    /* Red 15 */
+    --slds-g-color-palette-red-15: #4a0c04;
+    /* Red 20 */
+    --slds-g-color-palette-red-20: #640103;
+    /* Red 30 */
+    --slds-g-color-palette-red-30: #8e030f;
+    /* Red 40 */
+    --slds-g-color-palette-red-40: #ba0517;
+    /* Red 50 */
+    --slds-g-color-palette-red-50: #ea001e;
+    /* Red 60 */
+    --slds-g-color-palette-red-60: #fe5c4c;
+    /* Red 65 */
+    --slds-g-color-palette-red-65: #fe7765;
+    /* Red 70 */
+    --slds-g-color-palette-red-70: #fe8f7d;
+    /* Red 80 */
+    --slds-g-color-palette-red-80: #feb8ab;
+    /* Red 90 */
+    --slds-g-color-palette-red-90: #feded8;
+    /* Red 95 */
+    --slds-g-color-palette-red-95: #fef1ee;
+    /* Teal 10 */
+    --slds-g-color-palette-teal-10: #071b12;
+    /* Teal 15 */
+    --slds-g-color-palette-teal-15: #072825;
+    /* Teal 20 */
+    --slds-g-color-palette-teal-20: #023434;
+    /* Teal 30 */
+    --slds-g-color-palette-teal-30: #024d4c;
+    /* Teal 40 */
+    --slds-g-color-palette-teal-40: #056764;
+    /* Teal 50 */
+    --slds-g-color-palette-teal-50: #0b827c;
+    /* Teal 60 */
+    --slds-g-color-palette-teal-60: #06a59a;
+    /* Teal 65 */
+    --slds-g-color-palette-teal-65: #03b4a7;
+    /* Teal 70 */
+    --slds-g-color-palette-teal-70: #01c3b3;
+    /* Teal 80 */
+    --slds-g-color-palette-teal-80: #04e1cb;
+    /* Teal 90 */
+    --slds-g-color-palette-teal-90: #acf3e4;
+    /* Teal 95 */
+    --slds-g-color-palette-teal-95: #def9f3;
+    /* Violet 10 */
+    --slds-g-color-palette-violet-10: #2e0039;
+    /* Violet 15 */
+    --slds-g-color-palette-violet-15: #3d0157;
+    /* Violet 20 */
+    --slds-g-color-palette-violet-20: #481A54;
+    /* Violet 30 */
+    --slds-g-color-palette-violet-30: #730394;
+    /* Violet 40 */
+    --slds-g-color-palette-violet-40: #9602c7;
+    /* Violet 50 */
+    --slds-g-color-palette-violet-50: #ba01ff;
+    /* Violet 60 */
+    --slds-g-color-palette-violet-60: #cb65ff;
+    /* Violet 65 */
+    --slds-g-color-palette-violet-65: #d17dfe;
+    /* Violet 70 */
+    --slds-g-color-palette-violet-70: #d892fe;
+    /* Violet 80 */
+    --slds-g-color-palette-violet-80: #e5b9fe;
+    /* Violet 90 */
+    --slds-g-color-palette-violet-90: #f2defe;
+    /* Violet 95 */
+    --slds-g-color-palette-violet-95: #f9f0ff;
+    /* Yellow 10 */
+    --slds-g-color-palette-yellow-10: #281202;
+    /* Yellow 15 */
+    --slds-g-color-palette-yellow-15: #2e2204;
+    /* Yellow 20 */
+    --slds-g-color-palette-yellow-20: #4f2100;
+    /* Yellow 30 */
+    --slds-g-color-palette-yellow-30: #6f3400;
+    /* Yellow 40 */
+    --slds-g-color-palette-yellow-40: #8c4b02;
+    /* Yellow 50 */
+    --slds-g-color-palette-yellow-50: #a86403;
+    /* Yellow 60 */
+    --slds-g-color-palette-yellow-60: #ca8501;
+    /* Yellow 65 */
+    --slds-g-color-palette-yellow-65: #d79304;
+    /* Yellow 70 */
+    --slds-g-color-palette-yellow-70: #e4a201;
+    /* Yellow 80 */
+    --slds-g-color-palette-yellow-80: #fcc003;
+    /* Yellow 90 */
+    --slds-g-color-palette-yellow-90: #f9e3b6;
+    /* Yellow 95 */
+    --slds-g-color-palette-yellow-95: #fbf3e0;
+    /* Neutral 10 */
+    --slds-g-color-palette-neutral-10: #181818;
+    /* Neutral 15 */
+    --slds-g-color-palette-neutral-15: #242424;
+    /* Neutral 20 */
+    --slds-g-color-palette-neutral-20: #2e2e2e;
+    /* Neutral 30 */
+    --slds-g-color-palette-neutral-30: #444444;
+    /* Neutral 40 */
+    --slds-g-color-palette-neutral-40: #5c5c5c;
+    /* Neutral 50 */
+    --slds-g-color-palette-neutral-50: #747474;
+    /* Neutral 60 */
+    --slds-g-color-palette-neutral-60: #939393;
+    /* Neutral 65 */
+    --slds-g-color-palette-neutral-65: #a0a0a0;
+    /* Neutral 70 */
+    --slds-g-color-palette-neutral-70: #aeaeae;
+    /* Neutral 80 */
+    --slds-g-color-palette-neutral-80: #c9c9c9;
+    /* Neutral 90 */
+    --slds-g-color-palette-neutral-90: #e5e5e5;
+    /* Neutral 95 */
+    --slds-g-color-palette-neutral-95: #f3f3f3;
+    /* Neutral 100 */
+    --slds-g-color-palette-neutral-100: #ffffff;
+    /* Spacing size 1. */
+    --slds-g-spacing-1: 0.25rem;
+    /* Spacing size 2. */
+    --slds-g-spacing-2: 0.5rem;
+    /* Spacing size 3. */
+    --slds-g-spacing-3: 0.75rem;
+    /* Spacing size 4. */
+    --slds-g-spacing-4: 1rem;
+    /* Spacing size 5. */
+    --slds-g-spacing-5: 1.5rem;
+    /* Spacing size 6. */
+    --slds-g-spacing-6: 2rem;
+    /* Spacing size 7. */
+    --slds-g-spacing-7: 2.5rem;
+    /* Spacing size 8. */
+    --slds-g-spacing-8: 3rem;
+    /* Spacing size 9. */
+    --slds-g-spacing-9: 3.5rem;
+    /* Spacing size 10. */
+    --slds-g-spacing-10: 4rem;
+    /* Spacing size 11. */
+    --slds-g-spacing-11: 4.5rem;
+    /* Spacing size 12. */
+    --slds-g-spacing-12: 5rem;
+    /* System font stack for your application. */
+    --slds-g-font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* Monospace font stack for your application. */
+    --slds-g-font-family-monospace: Consolas, Menlo, Monaco, Courier, monospace;
+    /* Bold font-weight, use to increase emphasis. */
+    --slds-g-font-weight-bold: bold;
+    /* Font weight 1 */
+    --slds-g-font-weight-1: 100;
+    /* Font weight 2 */
+    --slds-g-font-weight-2: 200;
+    /* Font weight 3 */
+    --slds-g-font-weight-3: 300;
+    /* Font weight 4 */
+    --slds-g-font-weight-4: 400;
+    /* Font weight 5 */
+    --slds-g-font-weight-5: 500;
+    /* Font weight 6 */
+    --slds-g-font-weight-6: 600;
+    /* Font weight 7 */
+    --slds-g-font-weight-7: 700;
+    /* Default line-height for your application. */
+    --slds-g-font-lineheight: 1.5;
+    /* Line-height 1. */
+    --slds-g-font-lineheight-1: 1;
+    /* Line-height 2. */
+    --slds-g-font-lineheight-2: 1.25;
+    /* Line-height 3. */
+    --slds-g-font-lineheight-3: 1.375;
+    /* Line-height 4. */
+    --slds-g-font-lineheight-4: 1.5;
+    /* Line-height 5. */
+    --slds-g-font-lineheight-5: 1.75;
+    /* Line-height 6. */
+    --slds-g-font-lineheight-6: 2;
+    /* Default font-size for your application. */
+    --slds-g-font-size-base: 1rem;
+    /* Scaled font-size that is 4 stops smaller than the base. */
+    --slds-g-font-scale-neg-4: 0.625rem;
+    /* Scaled font-size that is 3 stops smaller than the base. */
+    --slds-g-font-scale-neg-3: 0.75rem;
+    /* Scaled font-size that is 2 stops smaller than the base. */
+    --slds-g-font-scale-neg-2: 0.8125rem;
+    /* Scaled font-size that is 1 stop smaller than the base. */
+    --slds-g-font-scale-neg-1: 0.875rem;
+    /* Scaled font-size that is 1 stop bigger than the base. */
+    --slds-g-font-scale-1: 1.125rem;
+    /* Scaled font-size that is 2 stops bigger than the base. */
+    --slds-g-font-scale-2: 1.266rem;
+    /* Scaled font-size that is 3 stops bigger than the base. */
+    --slds-g-font-scale-3: 1.424rem;
+    /* Scaled font-size that is 4 stops bigger than the base. */
+    --slds-g-font-scale-4: 1.602rem;
+    /* Scaled font-size that is 5 stops bigger than the base. */
+    --slds-g-font-scale-5: 1.802rem;
+    /* Scaled font-size that is 6 stops bigger than the base. */
+    --slds-g-font-scale-6: 2.027rem;
+    /* Scaled font-size that is 7 stops bigger than the base. */
+    --slds-g-font-scale-7: 2.281rem;
+    /* Scaled font-size that is 8 stops bigger than the base. */
+    --slds-g-font-scale-8: 2.566rem;
+    /* Scaled font-size that is 9 stops bigger than the base. */
+    --slds-g-font-scale-9: 2.887rem;
+    /* Scaled font-size that is 10 stops bigger than the base. */
+    --slds-g-font-scale-10: 3.247rem;
+    /* Small border radius for UI elements. */
+    --slds-g-radius-border-1: 0.125rem;
+    /* Medium border radius for UI elements. */
+    --slds-g-radius-border-2: 0.25rem;
+    /* Large border radius for UI elements. */
+    --slds-g-radius-border-3: 0.5rem;
+    /* Extra Large border radius for UI elements. */
+    --slds-g-radius-border-4: 1rem;
+    /* Circular border radius for UI elements. */
+    --slds-g-radius-border-circle: 100%;
+    /* Square aspect ratio. */
+    --slds-g-ratio-square: 1;
+    /* Landscape aspect ratio. */
+    --slds-g-ratio-landscape: 4/3;
+    /* Portrait aspect ratio. */
+    --slds-g-ratio-portrait: 3/4;
+    /* Widescreen aspect ratio. */
+    --slds-g-ratio-wide: 16/9;
+    /* Ultra Widescreen aspect ratio. */
+    --slds-g-ratio-ultrawide: 18/5;
+    /* Shadow depth 1 */
+    --slds-g-shadow-1: 0 0 2px 0 #18181814, 0 2px 4px 1px #18181828;
+    /* Shadow depth 2 */
+    --slds-g-shadow-2: 0 2px 8px -2px #18181814, 0 8px 12px -2px #18181828;
+    /* Shadow depth 3 */
+    --slds-g-shadow-3: 0 12px 24px -4px #18181814, 0 16px 32px -4px #18181828;
+    /* Shadow depth 4 */
+    --slds-g-shadow-4: 0 24px 48px -4px #18181833;
+    /* Border size 1. */
+    --slds-g-sizing-border-1: 1px;
+    /* Border size 2. */
+    --slds-g-sizing-border-2: 2px;
+    /* Border size 3. */
+    --slds-g-sizing-border-3: 3px;
+    /* Border size 4. */
+    --slds-g-sizing-border-4: 4px;
+    /* Size 1. */
+    --slds-g-sizing-1: 0.125rem;
+    /* Size 2. */
+    --slds-g-sizing-2: 0.25rem;
+    /* Size 3. */
+    --slds-g-sizing-3: 0.5rem;
+    /* Size 4. */
+    --slds-g-sizing-4: 0.75rem;
+    /* Size 5. */
+    --slds-g-sizing-5: 1rem;
+    /* Size 6. */
+    --slds-g-sizing-6: 1.25rem;
+    /* Size 7. */
+    --slds-g-sizing-7: 1.5rem;
+    /* Size 8. */
+    --slds-g-sizing-8: 1.75rem;
+    /* Size 9. */
+    --slds-g-sizing-9: 2rem;
+    /* Size 10. */
+    --slds-g-sizing-10: 3rem;
+    /* Size 11. */
+    --slds-g-sizing-11: 4rem;
+    /* Size 12. */
+    --slds-g-sizing-12: 5rem;
+    /* Size 13. */
+    --slds-g-sizing-13: 10rem;
+    /* Size 14. */
+    --slds-g-sizing-14: 15rem;
+    /* Size 15. */
+    --slds-g-sizing-15: 20rem;
+    /* Size 16. */
+    --slds-g-sizing-16: 30rem;
+    /* Content Size 1. */
+    --slds-g-sizing-content-1: 20ch;
+    /* Content Size 2. */
+    --slds-g-sizing-content-2: 45ch;
+    /* Content Size 3. */
+    --slds-g-sizing-content-3: 60ch;
+    /* Header content size 1. */
+    --slds-g-sizing-heading-1: 20ch;
+    /* Header content size 2. */
+    --slds-g-sizing-heading-2: 25ch;
+    /* Header content size 3. */
+    --slds-g-sizing-heading-3: 35ch;
+  }
+  
