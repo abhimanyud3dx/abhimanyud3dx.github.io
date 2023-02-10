@@ -29,10 +29,22 @@
     "engines": {
         "node": ">=10.0.0"
     },
-    "homepage": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io",
+    "homepage": "https://abhimanyud3dx.github.io",
     "keywords": [
         "lwc"
     ],
+    "nodemonConfig": {
+        "watch": [
+            "src/server/**/*.js",
+            "scripts/server.js"
+        ],
+        "ext": "js",
+        "ignore": [
+            "src/**/*.spec.js",
+            "src/**/*.test.js"
+        ],
+        "exec": "node ./scripts/server.js"
+    },
     "license": "CC0-1.0",
     "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
     "scripts": {
@@ -51,6 +63,6 @@
         "postinstall": "husky install",
         "precommit": "yarn prettier && yarn lint && yarn test:unit",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d build"
     }
 }
