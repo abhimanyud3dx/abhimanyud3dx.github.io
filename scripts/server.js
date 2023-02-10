@@ -25,7 +25,7 @@ app.use(compression());
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3001;
-const DIST_DIR = './public';
+const DIST_DIR = './dist';
 
 app.use(express.static(DIST_DIR));
 
