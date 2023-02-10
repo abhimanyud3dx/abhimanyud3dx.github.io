@@ -4,14 +4,15 @@ logs
 *-debug.log
 *-error.log
 
-# Standard lib folder
-/lib
+# Standard dist folder
+/dist
 
 # Tooling files
 node_modules
+jsconfig.json
 
-# Site directory
-/public
+# Temp directory
+/tmp
 
 # Jest coverage folder
 /coverage

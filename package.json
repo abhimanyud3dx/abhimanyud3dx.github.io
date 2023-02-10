@@ -1,92 +1,53 @@
 {
-    "name": "lwc-slds-portfolio",
-    "description": "A starter repository showing how to build a portfolio using LWC and slds",
-    "version": "0.0.1",
-    "author": "abhimanyud3dx",
-    "bugs": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues",
+    "name": "lwc-recipes-oss",
+    "version": "0.2.0",
+    "author": "Salesforce Developer Evangelism",
+    "bugs": "https://github.com/trailheadapps/lwc-recipes-oss/issues",
     "dependencies": {
-        "@salesforce-ux/design-system": "^2.20.1",
-        "autoprefixer": "^10.2.4",
+        "@salesforce-ux/design-system": "^2.14.2",
         "compression": "^1.7.4",
-        "date-and-time": "^0.14.2",
         "express": "^4.17.1",
-        "helmet": "^4.3.1",
-        "lightning-base-components": "^1.17.3-alpha",
-        "tailwindcss": "^2.0.2"
+        "helmet": "^4.4.1",
+        "highcharts": "^9.0.1",
+        "lightning-base-components": "^1.17.3-alpha"
     },
+    "description": "Lightning Web Components Recipes Open Source",
     "devDependencies": {
-        "@11ty/eleventy": "^0.11.1",
-        "babel-plugin-prismjs": "^2.0.1",
-        "clean-webpack-plugin": "^3.0.0",
-        "css-loader": "^5.0.1",
-        "del-cli": "^3.0.1",
-        "eslint": "^7.19.0",
-        "gh-pages": "^5.0.0",
-        "html-minifier": "^4.0.0",
-        "husky": "^4.3.8",
-        "jsdom": "^16.4.0",
-        "lint-staged": "^10.5.3",
-        "lwc-services": "^2.3.2",
-        "markdown-it-emoji": "^2.0.0",
-        "markdown-it-replace-link": "^1.1.0",
-        "npm-run-all": "^4.1.5",
-        "postcss": "^8.2.4",
-        "postcss-loader": "^4.2.0",
-        "prettier": "^2.2.1",
-        "prismjs": "^1.23.0",
-        "style-loader": "^2.0.0",
-        "webpack-cli": "^4.5.0"
+        "@sa11y/jest": "0.3.0",
+        "@salesforce-ux/design-system": "^2.14.2",
+        "@salesforce/wire-service-jest-util": "^2.4.2",
+        "chart.js": "^2.9.4",
+        "d3": "^6.5.0",
+        "husky": "^5.1.2",
+        "jest-canvas-mock": "^2.3.1",
+        "lwc-recipes-oss-ui-components": "^0.3.2",
+        "lwc-services": "^3.0.4",
+        "moment": "^2.29.1",
+        "prettier": "^2.2.1"
     },
     "engines": {
         "node": ">=10.0.0"
     },
-    "homepage": "https://abhimanyud3dx.github.io/",
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
+    "homepage": "https://github.com/trailheadapps/lwc-recipes-oss",
     "keywords": [
         "lwc"
     ],
-    "license": "MIT",
-    "lint-staged": {
-        "**/*.{css,html,js,json,md,ts,yaml,yml}": [
-            "prettier --write"
-        ],
-        "./src/**/*.js": [
-            "eslint"
-        ]
-    },
-    "nodemonConfig": {
-        "watch": [
-            "src/server/**/*.js",
-            "scripts/server.js"
-        ],
-        "ext": "js",
-        "ignore": [
-            "src/**/*.spec.js",
-            "src/**/*.test.js"
-        ],
-        "exec": "node ./scripts/server.js"
-    },
-    "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
+    "license": "CC0-1.0",
+    "repository": "trailheadapps/lwc-recipes-oss",
     "scripts": {
-        "build:lwc": "NODE_ENV=production webpack --mode=production",
-        "build:lwc:dev": "webpack --mode=development",
-        "build:eleventy": "eleventy",
-        "build": "run-s build:lwc clean:public build:eleventy clean:build",
-        "clean:build": "del-cli build",
-        "clean:public": "del-cli public",
+        "build": "lwc-services build --mode production",
+        "build:development": "lwc-services build",
         "lint": "eslint ./src/**/*.js",
-        "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
-        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,yaml,yml}\"",
         "serve": "node scripts/server.js",
-        "serve:eleventy": "eleventy --serve",
         "test:unit": "lwc-services test:unit",
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
-        "watch": "lwc-services watch -w webpack.config.dev.js"
+        "watch": "lwc-services watch",
+        "watch:production": "lwc-services watch --mode=production",
+        "postinstall": "husky install",
+        "precommit": "yarn prettier && yarn lint && yarn test:unit"
     }
 }

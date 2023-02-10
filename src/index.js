@@ -1,10 +1,9 @@
-/* eslint-disable @lwc/lwc/no-document-query */
-import './shared.js';
+import { createElement, register } from 'lwc';
+import { registerWireService } from '@lwc/wire-service';
+import UiApp from 'ui/app';
 
-import BlogTile from 'ui/blogTile';
-import Pagination from 'ui/pagination';
+registerWireService(register);
 
-customElements.define('blog-tile', BlogTile.CustomElementConstructor);
-customElements.define('ui-pagination', Pagination.CustomElementConstructor);
-
-document.querySelector('body').style.display = 'block';
+const app = createElement('my-app', { is: UiApp });
+// eslint-disable-next-line @lwc/lwc/no-document-query
+document.querySelector('#main').appendChild(app);

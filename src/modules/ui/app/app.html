@@ -1,0 +1,28 @@
+<template>
+    <section class="content container page-background">
+        <ui-navbar
+            nav-items={navigationItems}
+            selected-item={currentNavigationItem}
+            oncategorychange={handleCategoryChange}
+        >
+        </ui-navbar>
+        <article class="container">
+            <div>
+                <template if:true={navigationItems.cic.visible}>
+                    <c-compound-interest-calc></c-compound-interest-calc>
+                </template>
+                <template if:true={navigationItems.party.visible}>
+                    <recipe-libs-d3></recipe-libs-d3>
+                    <recipe-libs-chartjs></recipe-libs-chartjs>
+                    <recipe-libs-momentjs></recipe-libs-momentjs>
+                </template>
+                <ui-navfooter
+                    label-next={nextNavigationItem}
+                    label-previous={previousNavigationItem}
+                    onnextclicked={handleNavigateNext}
+                    onpreviousclicked={handleNavigatePrevious}
+                ></ui-navfooter>
+            </div>
+        </article>
+    </section>
+</template>

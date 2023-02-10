@@ -1,12 +1,4 @@
-# Jest coverage
+.vscode
 coverage/
-
-# Default lib folder
-lib/
-
-# Default build folder
-build/
-public/
-
-# Default resources folder
+dist/
 src/resources
