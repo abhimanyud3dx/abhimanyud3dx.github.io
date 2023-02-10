@@ -36,12 +36,6 @@ jobs:
               run:  npm install
                     npm ci
 
-            # Add repo name to public path
-            - name: Add namespace to project config
-              run: |
-            #      cd config
-            #      sed -i -E "s,publicPath: '/',publicPath: '/'," blog.js
-
             # Build LWC and Eleventy
             - name: 'Building LWC'
               run: npm run build
