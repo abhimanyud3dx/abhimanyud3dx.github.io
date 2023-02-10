@@ -43,8 +43,8 @@ jobs:
             #      sed -i -E "s,publicPath: '/',publicPath: '/'," blog.js
 
             # Build LWC and Eleventy
-            - name: 'Building LWC and Eleventy'
-              run: npm run build
+            - name: 'Building LWC '
+              run: npm run deploy
 
             # Deploy to GitHub pages
             - name: 'Deploy to GitHub pages'

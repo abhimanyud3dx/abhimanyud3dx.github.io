@@ -48,6 +48,8 @@
         "watch": "lwc-services watch",
         "watch:production": "lwc-services watch --mode=production",
         "postinstall": "husky install",
-        "precommit": "yarn prettier && yarn lint && yarn test:unit"
+        "precommit": "yarn prettier && yarn lint && yarn test:unit",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     }
 }
