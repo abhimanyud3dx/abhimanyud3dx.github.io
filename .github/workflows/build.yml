@@ -38,7 +38,7 @@ jobs:
 
             # Build LWC and Eleventy
             - name: 'Building LWC'
-              run: npm run build
+              run: npm run deploy
 
             # Deploy to GitHub pages
             - name: 'Deploy to GitHub pages'
