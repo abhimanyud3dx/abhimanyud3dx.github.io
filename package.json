@@ -1,0 +1,56 @@
+{
+    "name": "Abhimanyu Portfolio",
+    "version": "0.0.1",
+    "author": "Salesforce Developer Evangelism",
+    "bugs": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues",
+    "dependencies": {
+        "@salesforce-ux/design-system": "^2.14.2",
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "helmet": "^4.4.1",
+        "highcharts": "^9.0.1",
+        "lightning-base-components": "^1.17.3-alpha"
+    },
+    "description": "Lightning Web Components Recipes Open Source",
+    "devDependencies": {
+        "@sa11y/jest": "0.3.0",
+        "@salesforce-ux/design-system": "^2.14.2",
+        "@salesforce/wire-service-jest-util": "^2.4.2",
+        "chart.js": "^2.9.4",
+        "d3": "^6.5.0",
+        "gh-pages": "^5.0.0",
+        "husky": "^5.1.2",
+        "jest-canvas-mock": "^2.3.1",
+        "lwc-recipes-oss-ui-components": "^0.3.2",
+        "lwc-services": "^3.0.4",
+        "moment": "^2.29.1",
+        "prettier": "^2.2.1"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "homepage": "https://github.com/abhimanyud3dx/abhimanyud3dx.github.io",
+    "keywords": [
+        "lwc"
+    ],
+    "license": "CC0-1.0",
+    "repository": "abhimanyud3dx/abhimanyud3dx.github.io",
+    "scripts": {
+        "build": "lwc-services build --mode production",
+        "build:development": "lwc-services build",
+        "lint": "eslint ./src/**/*.js",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,yaml,yml}\"",
+        "serve": "node scripts/server.js",
+        "test:unit": "lwc-services test:unit",
+        "test:unit:coverage": "lwc-services test:unit --coverage",
+        "test:unit:debug": "lwc-services test:unit --debug",
+        "test:unit:watch": "lwc-services test:unit --watch",
+        "watch": "lwc-services watch",
+        "watch:production": "lwc-services watch --mode=production",
+        "postinstall": "husky install",
+        "precommit": "yarn prettier && yarn lint && yarn test:unit",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    }
+}
