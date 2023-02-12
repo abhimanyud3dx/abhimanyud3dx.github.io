@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
 import { navigationItems, navigationElements } from './navigation';
-import { config } from './gitprofile.config';
+import { config } from 'data/config';
 import { registerListener, unregisterAllListeners } from 'data/pubsub';
 
 

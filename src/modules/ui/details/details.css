@@ -1,4 +1,5 @@
 .profilePic {
+    border: 3px solid #1b96ff;
     border-radius:50%;
     margin-top:-100px;
     width:200px;

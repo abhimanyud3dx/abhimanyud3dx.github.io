@@ -6,8 +6,8 @@
         "type": "image/png",
         "sizes": "512x512"
     }],
-    "name": "Lightning Web Components Recipes",
-    "short_name": "LWC Recipes",
-    "start_url": "/#hello",
+    "name": "LWC Portfolio",
+    "short_name": "LWC Portfolio",
+    "start_url": "/",
     "theme_color": "#fff"
 }

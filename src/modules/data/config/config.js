@@ -22,10 +22,8 @@ const config = {
       phone: '+918852055355',
       email: 'abhimanyud3dx@gmail.com',
     },
-    resume: {
-      fileUrl:
-        'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
-    },
+    resume: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', 
+    // Empty fileUrl will hide the `Download Resume` button.
     skills: [
       'Salesforce',
       'LWC',
@@ -44,7 +42,7 @@ const config = {
         title: 'Module Lead',
         from: 'April 2019',
         to: 'Present',
-        link: 'https://example.com',
+        link: 'https://teksystems.com/',
         location : 'Hyderabad, Telangana',
         description:'Salesforce Architect Role'
       },
@@ -53,29 +51,65 @@ const config = {
         title: 'Consultant',
         from: 'April 2016',
         to: 'April 2019',
-        link: 'https://example.com',
+        link: 'https://www.appirio.com/',
         location : 'Jaipur, Rajasthan',
         description:'test'
       },
     ],
     certifications: [
       {
-        icon: 'Lorem ipsum',
-        title: 'Lorem ipsum',
-        year: 'March 2022',
-        link: 'https://example.com'
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nq&oid=00DF0000000gZsu&lastMod=1638349821000',
+        title: 'Sharing and Visibility Designer',
+        year: 'August 2021',
+        link: 'https://trailhead.salesforce.com/credentials/sharingandvisibilityarchitect'
       },
       {
-        icon: 'Lorem ipsum',
-        title: 'Lorem ipsum',
-        year: 'March 2022',
-        link: 'https://example.com'
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5MtX&oid=00DF0000000gZsu&lastMod=1617267315000',
+        title: 'Salesforce JavaScript Developer I',
+        year: 'December 2020',
+        link: 'https://trailhead.salesforce.com/credentials/javascriptdeveloperi'
       },
       {
-        icon: 'Lorem ipsum',
-        title: 'Lorem ipsum',
-        year: 'March 2022',
-        link: 'https://example.com'
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu6&oid=00DF0000000gZsu&lastMod=1617274648000',
+        title: 'Salesforce Certified Tableau CRM and Einstein Discovery Consultant',
+        year: 'June 2020',
+        link: 'https://trailhead.salesforce.com/credentials/tableaucrmandeinsteindiscoveryconsultant'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu4&oid=00DF0000000gZsu&lastMod=1617275568000',
+        title: 'Salesforce Experience Cloud Consultant',
+        year: 'October 2019',
+        link: 'https://trailhead.salesforce.com/credentials/experiencecloudconsultant'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mtn&oid=00DF0000000gZsu&lastMod=1617268355000',
+        title: 'Salesforce Service Cloud Consultant',
+        year: 'October 2019',
+        link: 'https://trailhead.salesforce.com/credentials/servicecloudconsultant'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mth&oid=00DF0000000gZsu&lastMod=1617268556000',
+        title: 'Salesforce Platform Developer II',
+        year: 'April 2019',
+        link: 'https://trailhead.salesforce.com/credentials/platformdeveloperii'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mtz&oid=00DF0000000gZsu&lastMod=1617268528000',
+        title: 'Salesforce Platform Developer I ',
+        year: 'June 2018',
+        link: 'https://trailhead.salesforce.com/credentials/platformdeveloperi'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mtl&oid=00DF0000000gZsu&lastMod=1617268490000',
+        title: 'Salesforce Platform App Builder',
+        year: 'March 2018',
+        link: 'https://trailhead.salesforce.com/credentials/platformappbuilder'
+      },
+      {
+        icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu5&oid=00DF0000000gZsu&lastMod=1617267801000',
+        title: 'Salesforce Admin',
+        year: 'September 2017',
+        link: 'https://trailhead.salesforce.com/credentials/administrator'
       },
     ],
     education: [
@@ -114,15 +148,15 @@ const config = {
     // Display blog posts from your medium or dev account. (Optional)
     blog: {
       source: 'dev', // medium | dev
-      username: 'arifszn', // to hide blog section, keep it empty
+      username: 'abhimanyudx', // to hide blog section, keep it empty
       limit: 2, // How many posts to display. Max is 10.
     },
     googleAnalytics: {
-      id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+      id: 'UA-31274040-4', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
     },
     // Track visitor interaction and behavior. https://www.hotjar.com
     hotjar: {
-      id: '',
+      id: '3363477',
       snippetVersion: 6,
     },
     themeConfig: {
@@ -172,7 +206,6 @@ const config = {
         'winter',
         'procyon',
       ],
-  
       // Custom theme
       customTheme: {
         primary: '#fc055b',

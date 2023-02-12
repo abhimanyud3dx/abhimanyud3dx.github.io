@@ -2,14 +2,25 @@ import { LightningElement,api } from 'lwc';
 import { serverMethod } from 'data/apiService';
 
 export default class Details extends LightningElement {
-    @api detail = {};
-    @api github = {};
-    @api social = {};
+    @api config = {};
+    detail = {};
+    github = {};
+    social = {};
+    resume = '';
 
     githubProfile = {};
     loading;
     connectedCallback() {
+        this.detail = this.config.detail;
+        this.github = this.config.github;
+        this.social = this.config.social;
+        this.resume = this.config.resume;
+
         this.retrieveGitProfile();
+    }
+
+    openResume(e) {
+        window.open(this.resume);
     }
 
     retrieveGitProfile() {

@@ -1,46 +1,49 @@
-## Contributing
+# Contributing
 
-1. Familiarize yourself with the codebase.
-1. Create a new issue before starting your project so that we can keep track of
-   what you are trying to add/fix. That way, we can also offer suggestions or
-   let you know if there is already an effort in progress. We will let you know when you're good to go to start.
-1. Fork this repository.
-1. The [README](README.md) has details on how to set up your environment.
-1. Create a _topic_ branch in your fork based on the correct branch (usually the **master** branch. Note, this step is recommended but technically not required if contributing using a fork.
-1. Edit the code in your fork.
-1. Sign CLA (see [CLA](#cla) below)
-1. Send us a pull request when you are done. We'll review your code, suggest any
-   needed changes, and merge it in.
+👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-### CLA
+If you have found an issue or would like to request a new feature, simply create a new issue detailing the request. We also welcome pull requests. See below for information on getting started with development and submitting pull requests.
 
-External contributors will be required to sign a Contributor's License
-Agreement. You can do so by going to https://cla.salesforce.com/sign-cla.
+Please note we have a [code of conduct](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/blob/main/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-## Branches
+## Found an Issue?
 
--   We work in `master`.
--   Our released (aka. _production_) branch is `master`.
--   Our work happens in _topic_ branches (feature and/or bug-fix).
-    -   feature as well as bug-fix branches are based on `master`
-    -   branches _should_ be kept up-to-date using `rebase`
-    -   see below for further merge instructions
+If you find a bug in the source code or a mistake in the documentation, you can help us by
+submitting an issue to our [GitHub Repository](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues/new). Even better you can submit a Pull Request
+with a fix.
 
-### Merging between branches
+## Submitting a Pull Request
 
--   We try to limit merge commits as much as possible.
+1. Make sure that the contribution you want to make is explained or detailed in a GitHub issue! Find an [existing issue](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues) or [open a new one](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/issues/new).
+2. Once done, [fork the repository](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/fork) in your own GitHub account.
+3. [Create a new Git branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
+4. Make the changes on your branch.
+5. [Submit the branch as a PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) pointing to the `main` branch of the main repository. <br>
+   We do not enforce a naming convention for the PRs, but **please use something descriptive of your changes**.
 
--   _Topic_ branches are:
+## Development Workflow
 
-    1. based on `master` and will be
-    1. squash-merged into `master`.
+### Install dependencies
 
-## Pull Requests
+```sh
+npm install
+```
 
--   Develop features and bug fixes in _topic_ branches.
--   _Topic_ branches can live in forks (external contributors) or within this repository (committers).
-    \*\* When creating _topic_ branches in this repository please prefix with `<developer-name>/`.
+### Run dev server
 
-### Merging Pull Requests
+```sh
+npm run watch
+```
 
--   Pull request merging is restricted to squash & merge only.
+### Linter
+
+Each PR should pass the linter to be accepted. To fix lint and prettier errors, run `npm run lint:fix` and `npm run prettier:fix`.
+
+### Commit Message
+
+As minimal requirements, your commit message should:
+
+- be capitalized
+- not finish by a dot or any other punctuation character (!,?)
+- start with a verb so that we can read your commit message this way: "This commit will ...", where "..." is the commit message.
+  e.g.: "Fix the home page button" or "Add support for dark mode"

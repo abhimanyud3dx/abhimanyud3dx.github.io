@@ -17,9 +17,11 @@
             <div class="slds-align_absolute-center slds-m-top_x-small">
                 <ui-social social={social}></ui-social>
             </div>
-            <div class="slds-align_absolute-center slds-m-top_x-small">
-                <lightning-button icon-name="utility:download" label="Download Resume"></lightning-button>
-            </div>
+            <template if:true={resume}>
+                <div class="slds-align_absolute-center slds-m-top_x-small">
+                    <lightning-button icon-name="utility:download" onclick={openResume} label="Download Resume"></lightning-button>
+                </div>
+            </template>
         </div>
     </div>
 </template>
