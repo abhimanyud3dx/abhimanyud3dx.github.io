@@ -16,29 +16,31 @@
                             <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
                                 <div
                                     class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
-                                    <h3 class="slds-truncate"
-                                        title={timeEntry.name}>
+                                    <h3 class="slds-truncate" title={timeEntry.name}>
                                         <a href={timeEntry.link}>
                                             <strong>{timeEntry.from} - {timeEntry.to}</strong>
                                         </a>
                                     </h3>
                                 </div>
                             </div>
-                            <div class="slds-no-flex">
-                                <h2><strong class="slds-text-heading_small">{timeEntry.name}</strong></h2>
-                            </div>
-                            <p class="slds-p-top_xx-small">
-                                {timeEntry.title}
-                            </p>
-                            <template if:true={timeEntry.location}>
-                                <p class="slds-p-top_xx-small"><lightning-icon size="xx-small" icon-name="utility:world">
-                                </lightning-icon> {timeEntry.location}</p>
-                            </template>
-                            <template if:true={timeEntry.description}>
-                                <article class="slds-box slds-box_x-small slds-theme_shade slds-m-top_xx-small">
-                                    {timeEntry.description}
-                                </article>
-                            </template>
+                            <article class="slds-box slds-box_x-small">
+                                <div class="slds-no-flex">
+                                    <h2><strong class="slds-text-heading_small">{timeEntry.name}</strong></h2>
+                                </div>
+                                <p class="slds-p-top_xx-small slds-text">
+                                    <lightning-icon size="xx-small" icon-name="utility:user"></lightning-icon>
+                                    &nbsp;{timeEntry.title}
+                                </p>
+                                <template if:true={timeEntry.location}>
+                                    <p class="slds-p-top_xx-small slds-text">
+                                        <lightning-icon size="xx-small" icon-name="utility:world"></lightning-icon>
+                                        &nbsp;{timeEntry.location}
+                                    </p>
+                                </template>
+                                <template if:true={timeEntry.description}>
+                                    <p class="slds-p-top_xx-small slds-text">{timeEntry.description}</p>
+                                </template>
+                            </article>
                         </div>
                     </div>
                 </div>

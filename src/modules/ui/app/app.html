@@ -6,9 +6,15 @@
                 <ui-details data-id="details" detail={config.profile} github={config.github} social={config.social}></ui-details>
                 <ui-skills data-id="skills" skills={config.skills}></ui-skills>
                 <ui-experience data-id="experience" experience={config.experiences}></ui-experience>                
-                <ui-certificates data-id="certificates" certifications={config.certifications}></ui-certificates>
-                <ui-projects data-id="projects" projects={config.projects}></ui-projects>
+                <template if:true={config.certifications}>
+                    <ui-certificates data-id="certificates" certifications={config.certifications}></ui-certificates>
+                </template>
+                <template if:true={config.projects}>
+                    <ui-projects data-id="projects" projects={config.projects}></ui-projects>
+                </template>
+                <template if:true={config.education}>
                 <ui-education data-id="education" education={config.education}></ui-education>
+            </template>
             </div>
         </div>
     </section>

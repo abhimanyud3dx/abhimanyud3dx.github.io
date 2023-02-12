@@ -9,6 +9,7 @@ const config = {
       },
     },
     social: {
+      github: 'abhimanyud3dx',
       trailhead:'abhimanyudx',
       linkedin: 'abhimanyud3dx',
       twitter: 'abhimanyud3dx',

@@ -6,7 +6,8 @@ export default class Social extends LightningElement {
 
     connectedCallback() {
         this.socialDetails.trailhead = this.social.trailhead ? 'https://trailblazer.me/id/'+this.social.trailhead : null;
-        this.socialDetails.linkedin = this.social.linkedin ? 'https://linkedin.com/'+this.social.linkedin : null;
+        this.socialDetails.github = this.social.github ? 'https://github.com/'+this.social.github : null;
+        this.socialDetails.linkedin = this.social.linkedin ? 'https://linkedin.com/in/'+this.social.linkedin : null;
         this.socialDetails.twitter = this.social.twitter ? 'https://twitter.com/'+this.social.twitter : null;
         this.socialDetails.facebook = this.social.facebook ? 'https://www.facebook.com/'+this.social.facebook : null;
         this.socialDetails.instagram = this.social.instagram ? 'https://instagram.com/'+this.social.instagram : null;
