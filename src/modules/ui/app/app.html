@@ -1,28 +1,19 @@
 <template>
-    <section class="content container page-background">
-        <ui-navbar
-            nav-items={navigationItems}
-            selected-item={currentNavigationItem}
-            oncategorychange={handleCategoryChange}
-        >
-        </ui-navbar>
-        <article class="container">
-            <div>
-                <template if:true={navigationItems.cic.visible}>
-                    <c-compound-interest-calc></c-compound-interest-calc>
-                </template>
-                <template if:true={navigationItems.party.visible}>
-                    <recipe-libs-d3></recipe-libs-d3>
-                    <recipe-libs-chartjs></recipe-libs-chartjs>
-                    <recipe-libs-momentjs></recipe-libs-momentjs>
-                </template>
-                <ui-navfooter
-                    label-next={nextNavigationItem}
-                    label-previous={previousNavigationItem}
-                    onnextclicked={handleNavigateNext}
-                    onpreviousclicked={handleNavigatePrevious}
-                ></ui-navfooter>
+    <ui-header></ui-header>
+    <section class="slds-grid slds-wrap slds-m-horizontal_small slds-m-vertical_small">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+            <div class="slds-p-around_x-small">
+                <ui-details data-id="details" detail={config.profile} github={config.github} social={config.social}></ui-details>
+                <ui-skills data-id="skills" skills={config.skills}></ui-skills>
+                <ui-experience data-id="experience" experience={config.experiences}></ui-experience>                
+                <ui-certificates data-id="certificates" certifications={config.certifications}></ui-certificates>
+                <ui-projects data-id="projects" projects={config.projects}></ui-projects>
+                <ui-education data-id="education" education={config.education}></ui-education>
             </div>
-        </article>
+        </div>
     </section>
+    <!--recipe-libs-d3></recipe-libs-d3>
+    <recipe-libs-chartjs></recipe-libs-chartjs>
+    <recipe-libs-momentjs></recipe-libs-momentjs-->
+    <ui-footer-end></ui-footer-end>
 </template>

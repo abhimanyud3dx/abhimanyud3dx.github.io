@@ -1,0 +1,95 @@
+<template>
+<div class="social slds-grid">
+    <template if:true={socialDetails.email}>
+        <div class="col slds-m-top_xx-small">
+            <a href={socialDetails.email} target="_blank">
+                <img src="/resources/images/social/mail.svg" width="32" alt="Mail"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.phone}>
+        <div class="col">
+            <a href={socialDetails.phone} target="_blank">
+                <img src="/resources/images/social/phone.svg" width="32" alt="Phone"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.website}>
+        <div class="col">
+            <a href={socialDetails.website} target="_blank">
+                <lightning-icon icon-name="standard:link" size="medium" title={socialDetails.website}></lightning-icon>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.trailhead}>
+        <div class="col">
+            <a href={socialDetails.trailhead} target="_blank">
+                <img src="/resources/images/social/trailhead-logo.svg" width="32" alt="Trailhead"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.linkedin}>
+        <div class="col">
+            <a href={socialDetails.linkedin} target="_blank">
+                <img src="/resources/images/social/linkedin.svg" width="32" alt="Linkedin"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.instagram}>
+        <div class="col">
+            <a href={socialDetails.instagram} target="_blank">
+                <img src="/resources/images/social/instagram.svg" width="32" alt="Instagram"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.twitter}>
+        <div class="col">
+            <a href={socialDetails.twitter} target="_blank">
+                <img src="/resources/images/social/twitter.svg" width="32" alt="Twitter"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.facebook}>
+        <div class="col">
+            <a href={socialDetails.facebook} target="_blank">
+                <img src="/resources/images/social/facebook.svg" width="32" alt="Facebook"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.dribbble}>
+        <div class="col">
+            <a href={socialDetails.dribbble} target="_blank">
+                <img src="/resources/images/social/dribbble.svg" width="32" alt="Dribbble"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.behance}>
+        <div class="col">
+            <a href={socialDetails.behance} target="_blank">
+                <img src="/resources/images/social/behance.svg" width="32" alt="Behance"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.medium}>
+        <div class="col">
+            <a href={socialDetails.medium} target="_blank">
+                <img src="/resources/images/social/medium.svg" width="32" alt="Medium"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.devto}>
+        <div class="col">
+            <a href={socialDetails.devto} target="_blank">
+                <img src="/resources/images/social/devto.svg" width="32" alt="DevTo"></img>
+            </a>
+        </div>
+    </template>
+    <template if:true={socialDetails.stackoverflow}>
+        <div class="col">
+            <a href={socialDetails.stackoverflow} target="_blank">
+                <img src="/resources/images/social/stackoverflow.svg" width="32" alt="Stackoverflow"></img>
+            </a>
+        </div>
+    </template>
+</div>
+</template>

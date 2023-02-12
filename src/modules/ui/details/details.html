@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-box slds-box_small slds-m-around_x-small slds-card mainbox">
+        <div class="slds-align_absolute-center">
+            <img class="profilePic" src={githubProfile.avatar_url}></img>
+        </div>
+        <div class="slds-align_absolute-center">
+            <div class="slds-text-heading_medium slds-align_absolute-center"><strong>{githubProfile.name}</strong></div>
+        </div>
+        <div>
+            <lightning-icon size="xx-small" icon-name="utility:world">
+            </lightning-icon>&nbsp;{githubProfile.location}
+        </div>
+        <div>
+            {githubProfile.bio}
+        </div>
+        <div class="slds-align_absolute-center slds-m-top_x-small">
+            <ui-social social={social}></ui-social>
+        </div>
+        <div class="slds-align_absolute-center slds-m-top_x-small">
+            <lightning-button icon-name="utility:download" label="Download Resume"></lightning-button>
+        </div>
+    </div>
+</template>
