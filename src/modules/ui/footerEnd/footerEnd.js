@@ -1,8 +1,5 @@
-import { LightningElement } from 'lwc';
-//import { fireEvent } from 'data/pubsub';
+import { LightningElement,api } from 'lwc';
 
 export default class FooterEnd extends LightningElement {
-    gotToAbout(e) {
-        //fireEvent('redirect', {page:'about',url:'/about'});
-    }
+    @api footerText = '';
 }

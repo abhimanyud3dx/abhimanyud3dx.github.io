@@ -1,12 +1,9 @@
 # LWC Portfolio
-
-LWC Portfolio Using LWC OSS and SLDS
-
 <br/>
 <p align="center">
-  <img src="https://abhimanyud3dx.github.io/assets/images/lwc_profile.png" width="35%">
+  <img src="https://abhimanyud3dx.github.io/resources/images/lwc_profile.png" width="35%">
 
-  <h4 align="center">Easy to setup and use lwc portfolio</h4>
+  <h4 align="center">LWC Portfolio Using LWC OSS and SLDS, easy to setup and use lwc portfolio</h4>
 
   <p align="center">
     <a href="https://codeclimate.com/github/abhimanyud3dx/abhimanyud3dx.github.io/maintainability">
@@ -63,7 +60,7 @@ LWC Portfolio Using LWC OSS and SLDS
 **Features:**
 
 ✓ [Easy to Setup](#-installation--setup)  
-✓ [30 Themes](#themes)  
+<!--✓ [30 Themes](#themes)  -->
 ✓ [Google Analytics](#google-analytics)  
 ✓ [SEO](#seo)  
 ✓ [Avatar and Bio](#avatar-and-bio)  
@@ -235,11 +232,6 @@ const config = {
     googleAnalytics: {
         id: '' // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
     },
-    // Track visitor interaction and behavior. https://www.hotjar.com
-    hotjar: {
-        id: '',
-        snippetVersion: 6
-    },
     themeConfig: {
         defaultTheme: 'light',
 
@@ -299,12 +291,11 @@ const config = {
             '--rounded-btn': '3rem'
         }
     },
-
     // Optional Footer. Supports plain text or HTML.
     footer: `Copyright © 2023 John Doe`
 };
 ```
-
+<!--
 ### Themes
 
 There are 30 themes available that can be selected from the dropdown.
@@ -324,7 +315,7 @@ const config = {
 
 <p align="center">
   <img src="https://abhimanyud3dx.github.io/assets/img/hosted/abhimanyud3dx.github.io/theme-dropdown.png" alt="Theme Dropdown" width="50%">
-</p>
+</p-->
 
 You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
 
@@ -349,7 +340,7 @@ const config = {
 
 ### Google Analytics
 
-**abhimanyud3dx.github.io** supports both GA3 and GA4. If you do not want to use Google Analytics, keep the `id` empty.
+**abhimanyud3dx.github.io** supports GA4. If you do not want to use Google Analytics, keep the `id` empty.
 
 ```js
 // abhimanyud3dx.github.io.config.js
@@ -360,23 +351,8 @@ const config = {
     }
 };
 ```
-
 Besides tracking visitors, it will track `click events` on projects and blog posts, and send them to Google Analytics.
 
-### Hotjar
-
-**abhimanyud3dx.github.io** supports [hotjar](https://www.hotjar.com) to track visitor interaction and behavior. If you do not want to use Hotjar, keep the `id` empty.
-
-```js
-// abhimanyud3dx.github.io.config.js
-const config = {
-    // ...
-    hotjar: {
-        id: '',
-        snippetVersion: 6
-    }
-};
-```
 
 ### SEO
 
@@ -388,25 +364,25 @@ Your avatar and bio will be fetched from GitHub automatically.
 
 ### Social Links
 
-You can link your social media services you're using, including LinkedIn, Twitter, Facebook, Instagram, Dribbble, Behance, Medium, dev, Stack Overflow, personal website, phone and email.
+You can link your social media services you're using, including LinkedIn, Twitter, Facebook, Instagram, Dribbble, Behance, Medium, dev, Github, Salesforce Trailhead, Stack Overflow, personal website, phone and email.
 
 ```js
 // abhimanyud3dx.github.io.config.js
 const config = {
     // ...
     social: {
-        linkedin: 'abhimanyudx',
-        twitter: 'abhimanyudx',
+        github: '',
+        trailhead:'',
+        linkedin: '',
+        twitter: '',
         facebook: '',
         instagram: '',
-        dribbble: '',
-        behance: '',
         medium: '',
         dev: '',
-        stackoverflow: '',
+        stackoverflow: '', // format: userid/username
         website: '',
         phone: '',
-        email: ''
+        email: '',
     }
 };
 ```
@@ -464,16 +440,18 @@ const config = {
     // ...
     education: [
         {
-            institution: 'Institution name 1',
-            degree: 'Bachelor of Science',
-            from: '2015',
-            to: '2019'
+            name: 'Institution name 1',
+            title: 'Bachelor of Science',
+            from: 'July 2014',
+            to: 'April 2016',
+            location: 'Jaipur, Rajasthan'
         },
         {
-            institution: 'Institution name 2',
-            degree: 'Higher Secondary Certificate (HSC)',
+            name: 'Institution name 2',
+            title: 'Higher Secondary Certificate (HSC)',
             from: '2012',
-            to: '2014'
+            to: '2014',
+            location: 'Jaipur, Rajasthan'
         }
     ]
 };
@@ -542,25 +520,8 @@ const config = {
 };
 ```
 
-#### External Projects
-
-In this section you can showcase your external/personal projects.
-
-```js
-// abhimanyud3dx.github.io.config.js
-const config = {
-    // ...
-    externalProjects: [
-        {
-            title: 'Project Name',
-            description: 'Description',
-            link: 'https://example.com',
-            imageUrl: 'https://via.placeholder.com/250x250'
-        }
-    ]
-};
 ```
-
+<!--
 ### Blog Posts
 
 If you have [medium](https://medium.com) or [dev](https://dev.to) account, you can show your recent blog posts in here just by providing your medium/dev username. You can limit how many posts to display (Max is `10`).
@@ -579,7 +540,7 @@ const config = {
 
 ![Blog](https://abhimanyud3dx.github.io/assets/img/hosted/abhimanyud3dx.github.io/blog.png)
 
-The posts are fetched by [blog.js](https://github.com/abhimanyud3dx/blog.js).
+The posts are fetched by [blog.js](https://github.com/abhimanyud3dx/blog.js).-->
 
 ## 💖 Support
 

@@ -22,7 +22,7 @@ const config = {
       phone: '+918852055355',
       email: 'abhimanyud3dx@gmail.com',
     },
-    resume: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', 
+    resume: 'https://docs.google.com/document/d/1b7hrWGT0XFhhfg3ZEHZ1lMDdTgpjMXgkFXvUPBO5fUA/edit', 
     // Empty fileUrl will hide the `Download Resume` button.
     skills: [
       'Salesforce',
@@ -131,18 +131,17 @@ const config = {
     // To hide the `My Projects` section, keep it empty.
     projects: [
       {
-        title: 'Project Name',
+        title: 'Salesforce Header Creator',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        imageUrl: 'https://via.placeholder.com/250x250',
-        link: 'https://example.com',
+          'Instant Header Creator for LinkedIn and Twitter to show off your certifications and badges',
+        imageUrl: 'https://www.superqbit.com/resources/images/logo.svg',
+        link: 'https://www.superqbit.com/app?id=SalesforceHeaderCreator',
       },
       {
-        title: 'Project Name',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        imageUrl: 'https://via.placeholder.com/250x250',
-        link: 'https://example.com',
+        title: 'Salesforce Trailblazer Leaderboard',
+        description: 'Salesforce Trailblazer Leaderboard',
+        imageUrl: 'https://www.superqbit.com/resources/images/logo.svg',
+        link: 'https://www.superqbit.com/app?id=trailhead-leaderboard',
       },
     ],
     // Display blog posts from your medium or dev account. (Optional)
@@ -153,11 +152,6 @@ const config = {
     },
     googleAnalytics: {
       id: 'UA-31274040-4', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-    },
-    // Track visitor interaction and behavior. https://www.hotjar.com
-    hotjar: {
-      id: '3363477',
-      snippetVersion: 6,
     },
     themeConfig: {
       defaultTheme: 'winter',
@@ -216,7 +210,8 @@ const config = {
         '--rounded-box': '3rem',
         '--rounded-btn': '3rem',
       },
-    }
+    },
+    footer : 'By: Abhimanyud3dx, built with 💯% pure ⚡ <a href="https://lwc.dev/"  target="_blank">LWC</a> & <a href="https://www.lightningdesignsystem.com/" target="_blank">SLDS</a> and ❤️'
   };
 
 export { config };

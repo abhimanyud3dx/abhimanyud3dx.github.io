@@ -16,7 +16,6 @@ export default class App extends LightningElement {
 
     connectedCallback() {
         let that = this;
-        console.log(config.fullname);
         window.onpopstate = function (event) {
             if (event.state && event.state.page) {
                 that._isWindowHistoryUpdate = true;
@@ -47,20 +46,21 @@ export default class App extends LightningElement {
         this.navigationItems[this.currentNavigationItem].visible = true;
         this.calculateNavFooterElements();
 
-        registerListener('redirect',(event)=>{
+        registerListener('redirect', (event) => {
             this.currentPage = '';
-            setTimeout(()=>{
-                this.currentPage = '/'+event.page;
+            setTimeout(() => {
+                this.currentPage = '/' + event.page;
             }, 100);
-            window.history.pushState({urlPath:event.url,pageName:event.page}, null, event.url );
+            window.history.pushState({ urlPath: event.url, pageName: event.page }, null, event.url);
         });
-        registerListener('scroll',(event)=>{ console.log(event.id);
-            const topDiv = this.template.querySelector('[data-id="'+event.id.toLowerCase()+'"]');
-            topDiv && topDiv.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        registerListener('scroll', (event) => {
+            console.log(event.id);
+            const topDiv = this.template.querySelector('[data-id="' + event.id.toLowerCase() + '"]');
+            topDiv && topDiv.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
         });
     }
 
-    disconnectedCallback(){
+    disconnectedCallback() {
         unregisterAllListeners(this);
     }
 
@@ -75,7 +75,9 @@ export default class App extends LightningElement {
                 return;
             }
         }
-        this.updateGoogleAnalyticsForSPA(this.currentNavigationItem);
+        if (this.config && this.config.googleAnalytics && this.config.googleAnalytics.id) {
+            this.updateGoogleAnalyticsForSPA(this.currentNavigationItem, this.config.googleAnalytics.id);
+        }
         this.scrollAndLocation();
         this.calculateNavFooterElements();
         this.navigationItems[this.currentNavigationItem].visible = true;
@@ -85,7 +87,7 @@ export default class App extends LightningElement {
         this.hideCurrentNavigationItemFromNav();
         this.currentNavigationItem = this.navigationItems[
             this.navigationElements[
-                this.navigationElements.indexOf(this.currentNavigationItem) + 1
+            this.navigationElements.indexOf(this.currentNavigationItem) + 1
             ]
         ].value;
         this.handleCategoryChange();
@@ -95,7 +97,7 @@ export default class App extends LightningElement {
         this.hideCurrentNavigationItemFromNav();
         this.currentNavigationItem = this.navigationItems[
             this.navigationElements[
-                this.navigationElements.indexOf(this.currentNavigationItem) - 1
+            this.navigationElements.indexOf(this.currentNavigationItem) - 1
             ]
         ].value;
         this.handleCategoryChange();
@@ -104,12 +106,12 @@ export default class App extends LightningElement {
     calculateNavFooterElements() {
         this.nextNavigationItem = this.navigationItems[
             this.navigationElements[
-                this.navigationElements.indexOf(this.currentNavigationItem) + 1
+            this.navigationElements.indexOf(this.currentNavigationItem) + 1
             ]
         ];
         this.previousNavigationItem = this.navigationItems[
             this.navigationElements[
-                this.navigationElements.indexOf(this.currentNavigationItem) - 1
+            this.navigationElements.indexOf(this.currentNavigationItem) - 1
             ]
         ];
     }
@@ -117,7 +119,7 @@ export default class App extends LightningElement {
     hideCurrentNavigationItemFromNav() {
         this.navigationItems[
             this.navigationElements[
-                this.navigationElements.indexOf(this.currentNavigationItem)
+            this.navigationElements.indexOf(this.currentNavigationItem)
             ]
         ].visible = false;
     }
@@ -134,12 +136,12 @@ export default class App extends LightningElement {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
-    updateGoogleAnalyticsForSPA(newPage) {
+    updateGoogleAnalyticsForSPA(newPage, gid) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             window.dataLayer.push(arguments);
         }
-        gtag('config', 'UA-31274040-4', {
+        gtag('config', gid, {
             page_path: '#'.concat(newPage)
         });
     }
