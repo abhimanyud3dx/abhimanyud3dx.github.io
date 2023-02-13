@@ -520,10 +520,9 @@ const config = {
 };
 ```
 
-```
+
 <!--
 ### Blog Posts
-
 If you have [medium](https://medium.com) or [dev](https://dev.to) account, you can show your recent blog posts in here just by providing your medium/dev username. You can limit how many posts to display (Max is `10`).
 
 ```js
@@ -551,8 +550,8 @@ The posts are fetched by [blog.js](https://github.com/abhimanyud3dx/blog.js).-->
 
 ## 💡 Contribute
 
-To contribute, see the [Contributing guide](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/blob/main/CONTRIBUTING.md).
+To contribute, see the [Contributing guide](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/blob/main/CONTRIBUTION.md).
 
 ## 📄 License
 
-[MIT](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/blob/main/LICENSE)
+[MIT](https://github.com/abhimanyud3dx/abhimanyud3dx.github.io/blob/main/LICENSE.md)
