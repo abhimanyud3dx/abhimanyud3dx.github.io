@@ -38,7 +38,7 @@ export default class ContactMe extends LightningElement {
                     this.statusMessage = "Oops! There was a problem submitting the form"
                 });
 
-                setTimeout(() => { this.statusMessage = '';this.formData = {}; }, 2000);
+                setTimeout(() => { this.statusMessage = '';this.formData = {}; }, 5000);
             }
         }
     }
