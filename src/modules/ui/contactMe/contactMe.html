@@ -1,0 +1,58 @@
+<template>
+    <template if:true={showContact}>
+        <div class="slds-text-heading_medium slds-align_absolute-center">Contact</div>
+        <div class="slds-box slds-box_small slds-m-around_x-small slds-card">
+            <div class="slds-grid slds-wrap">
+                <div
+                    class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-text-align_center">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                            <div class="slds-text-heading_small slds-align_absolute-center">Lets' get in touch</div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+                            <lightning-icon size="xx-small" icon-name="utility:world">
+                            </lightning-icon>&nbsp;Jaipur, India
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+                            <lightning-icon size="xx-small" icon-name="utility:email">
+                            </lightning-icon>&nbsp;Email : abhimanyud3dx@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-text-align_left">
+                    <form onsubmit={submitForm}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-input label="First Name" class="slds-m-bottom_xx-small" data-id="first_name"
+                                    required max-length="40" type="text" value={formData.first_name}></lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-input label="Last Name" class="slds-m-bottom_xx-small" data-id="last_name"
+                                    required maxlength="80" max-length="20" type="text"
+                                    value={formData.last_name}></lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-input label="Email" data-id="email" class="slds-m-bottom_xx-small" required
+                                    maxlength="80" max-length="20" type="email" onchange={fieldChange}
+                                    value={formData.email}></lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-textarea data-id="message" label="Message" class="slds-m-bottom_xx-small"
+                                    required name="message" onchange={fieldChange}
+                                    value={formData.message}></lightning-textarea>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <div class="slds-text-heading_small">{statusMessage}</div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-text-align_center">
+                                <lightning-button icon-name="utility:upload" class="slds-m-top_small" type="submit"
+                                    label="submit"></lightning-button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

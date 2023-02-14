@@ -153,6 +153,9 @@ const config = {
     googleAnalytics: {
       id: 'UA-31274040-4', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
     },
+    formspree: {
+      id: 'xqkopjzr', // Formspree Id for Contact us Form (https://formspree.io)
+    },
     themeConfig: {
       defaultTheme: 'winter',
   
