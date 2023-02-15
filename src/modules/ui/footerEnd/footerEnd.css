@@ -1,3 +1,4 @@
 .footerEnd {
     display:block;
+    border-top: 1px solid var(--slds-g-color-border-base-1,#e5e5e5);
 }

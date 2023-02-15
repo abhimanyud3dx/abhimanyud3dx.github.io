@@ -60,7 +60,7 @@
 **Features:**
 
 ✓ [Easy to Setup](#-installation--setup)  
-<!--✓ [30 Themes](#themes)  -->
+✓ [2 Themes](#themes)
 ✓ [Google Analytics](#google-analytics)  
 ✓ [SEO](#seo)  
 ✓ [Avatar and Bio](#avatar-and-bio)  
@@ -234,71 +234,31 @@ const config = {
     },
     themeConfig: {
         defaultTheme: 'light',
-
-        // Hides the theme change switch
-        // Useful if you want to support a single color mode
-        disableSwitch: false,
-
-        // Should use the prefers-color-scheme media-query,
-        // using user system preferences, instead of the hardcoded defaultTheme
-        respectPrefersColorScheme: true,
-
-        // Hide the ring in Profile picture
-        hideAvatarRing: false,
-
         // Available themes. To remove any theme, exclude from here.
         themes: [
             'light',
-            'dark',
-            'cupcake',
-            'bumblebee',
-            'emerald',
-            'corporate',
-            'synthwave',
-            'retro',
-            'cyberpunk',
-            'valentine',
-            'halloween',
-            'garden',
-            'forest',
-            'aqua',
-            'lofi',
-            'pastel',
-            'fantasy',
-            'wireframe',
-            'black',
-            'luxury',
-            'dracula',
-            'cmyk',
-            'autumn',
-            'business',
-            'acid',
-            'lemonade',
-            'night',
-            'coffee',
-            'winter',
-            'procyon'
+            'dark'
         ],
-
         // Custom theme
         customTheme: {
-            primary: '#fc055b',
-            secondary: '#219aaf',
-            accent: '#e8d03a',
-            neutral: '#2A2730',
-            'base-100': '#E3E3ED',
-            '--rounded-box': '3rem',
-            '--rounded-btn': '3rem'
+            primary: '#E3E3ED',  
+            primaryText: '#219aaf',    
+            baseL1: '#219aaf',
+            baseL2: '#fc055b',
+            highlight: '#fc066b',      
+            baseText:'#fff',
+            roundedbox: '4px',
+            roundedbtn: '4px'
         }
     },
     // Optional Footer. Supports plain text or HTML.
     footer: `Copyright © 2023 John Doe`
 };
 ```
-<!--
+
 ### Themes
 
-There are 30 themes available that can be selected from the dropdown.
+There are 2 themes available that can be selected from the config.js.
 
 The default theme can be specified.
 
@@ -307,17 +267,14 @@ The default theme can be specified.
 const config = {
     // ...
     themeConfig: {
-        defaultTheme: 'light'
+        defaultTheme: 'default'
         // ...
     }
 };
 ```
 
-<p align="center">
-  <img src="https://abhimanyud3dx.github.io/assets/img/hosted/abhimanyud3dx.github.io/theme-dropdown.png" alt="Theme Dropdown" width="50%">
-</p-->
 
-You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
+You can create your own custom theme by modifying these values. Theme `custom` will have the custom styles.
 
 ```js
 // abhimanyud3dx.github.io.config.js
@@ -325,13 +282,14 @@ const config = {
     // ...
     themeConfig: {
         customTheme: {
-            primary: '#fc055b',
-            secondary: '#219aaf',
-            accent: '#e8d03a',
-            neutral: '#2A2730',
-            'base-100': '#E3E3ED',
-            '--rounded-box': '3rem',
-            '--rounded-btn': '3rem'
+            primary: '#E3E3ED',  
+            primaryText: '#219aaf',    
+            baseL1: '#219aaf',
+            baseL2: '#fc055b',
+            highlight: '#fc066b',      
+            baseText:'#fff',
+            roundedbox: '4px',
+            roundedbtn: '4px'
         }
         // ...
     }

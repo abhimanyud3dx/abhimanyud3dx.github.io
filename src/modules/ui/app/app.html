@@ -1,5 +1,6 @@
 <template>
-    <ui-header show-contact={showContact}></ui-header>
+    <div class="theme_style"></div>
+    <ui-header show-contact={showContact} header={config.header}></ui-header>
     <section class="slds-grid slds-wrap slds-m-horizontal_small slds-m-vertical_small">
         <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
             <div class="slds-p-around_x-small">
@@ -19,9 +20,5 @@
             </div>
         </div>
     </section>
-    <!--recipe-libs-d3></recipe-libs-d3>
-    <recipe-libs-chartjs></recipe-libs-chartjs>
-    <recipe-libs-momentjs></recipe-libs-momentjs-->
-
     <ui-footer-end footer-text={config.footer}></ui-footer-end>
 </template>

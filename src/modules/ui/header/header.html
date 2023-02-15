@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="slds-context-bar">
+        <div class="slds-context-bar baseL1">
             <div class="slds-context-bar__primary">
                 <div
                     class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
@@ -18,9 +18,11 @@
                         </div>
                     </div>
                     <span class="slds-context-bar__label-action slds-context-bar__app-name">
-                        <span title="Abhimanyu Singh Tanwar">
-                            <h1 class="title">Abhimanyu Singh Tanwar</h1>
-                        </span>
+                        <template if:true={header.name}>
+                            <span title={header.name}>
+                                <h1 class="title">{header.name}</h1>
+                            </span>
+                        </template>
                     </span>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="slds-box slds-box_small slds-m-around_x-small slds-card mainbox">
+    <div class="slds-box slds-box_small slds-m-around_x-small slds-card mainbox baseL1">
         <div class="slds-align_absolute-center">
             <img class="profilePic" src={githubProfile.avatar_url}></img>
         </div>
@@ -19,7 +19,7 @@
             </div>
             <template if:true={resume}>
                 <div class="slds-align_absolute-center slds-m-top_x-small">
-                    <lightning-button icon-name="utility:download" onclick={openResume} label="Download Resume"></lightning-button>
+                    <lightning-button class="rounded-btn primary" icon-name="utility:download" onclick={openResume} label="Download Resume"></lightning-button>
                 </div>
             </template>
         </div>

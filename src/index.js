@@ -14,11 +14,25 @@ function gtag() { dataLayer.push(arguments); }
 if(config) {
     const trackingId = config.googleAnalytics.id;
     const {head} = document;
-    const script = document.createElement('script');
+    let script = document.createElement('script');
     script.id = 'gtag'; 
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
     head.insertBefore(script, head.firstChild);
     gtag('js', new Date());
     gtag('config', trackingId);
+
+    if(config.themeConfig && 
+        config.themeConfig.defaultTheme && 
+        config.themeConfig[config.themeConfig.defaultTheme]) {
+        script = document.getElementById('BMC-Widget');
+        script.setAttribute('data-color', config.themeConfig[config.themeConfig.defaultTheme].highlight || config.themeConfig[config.themeConfig.defaultTheme].primary || '#fff');
+    }
 }
+
+if(1==1) {
+    
+}
+
+
+   
