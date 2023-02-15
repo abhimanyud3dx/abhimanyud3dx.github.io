@@ -1,6 +1,7 @@
 import { LightningElement, track, api } from 'lwc';
 export default class ContactMe extends LightningElement {
-    @api formspree = {}
+    @api formspree = {};
+    @api social = {}
     @api showContact = false;
     @track formData = {};
     statusMessage = '';

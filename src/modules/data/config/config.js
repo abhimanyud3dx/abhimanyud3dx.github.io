@@ -17,14 +17,15 @@ const config = {
     trailhead: 'abhimanyudx',
     linkedin: 'abhimanyud3dx',
     twitter: 'abhimanyud3dx',
-    facebook: 'abhimanyud3dx',
+    facebook: 'abhimanyu.singhtanwar',
     instagram: 'abhimanyud3dx',
     medium: 'abhimanyud3dx',
     dev: 'abhimanyud3dx',
     stackoverflow: '4438108/abhimanyud3dx', // format: userid/username
-    website: 'https://abhimanyud3dx.github.io/',
+    website: 'https://www.superqbit.com',
     phone: '+918852055355',
     email: 'abhimanyud3dx@gmail.com',
+    location: 'Jaipur, Rajasthan',
   },
   resume: 'https://docs.google.com/document/d/1b7hrWGT0XFhhfg3ZEHZ1lMDdTgpjMXgkFXvUPBO5fUA/edit',
   // Empty fileUrl will hide the `Download Resume` button.
@@ -36,10 +37,12 @@ const config = {
     'Apex',
     'SOQL',
     'Node.js',
+    'Javascript',
     'Git',
     'MongoDB',
     'CSS',
   ],
+  // Remove experiences to hide section
   experiences: [
     {
       name: 'TEKSystems',
@@ -60,6 +63,7 @@ const config = {
       description: 'joined as intern and laddered up to Consultant'
     },
   ],
+  // Remove certifications to hide section
   certifications: [
     {
       icon: 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nq&oid=00DF0000000gZsu&lastMod=1638349821000',
@@ -116,6 +120,7 @@ const config = {
       link: 'https://trailhead.salesforce.com/credentials/administrator'
     },
   ],
+  // Remove education to hide section
   education: [
     {
       name: 'JECRC University',
@@ -143,7 +148,7 @@ const config = {
     },
     {
       title: 'Salesforce Trailblazer Leaderboard',
-      description: 'Salesforce Trailblazer Leaderboard',
+      description: 'Salesforce Trailblazer Leaderboard syncing Trailhead modules, certification, points in realtime',
       imageUrl: 'https://www.superqbit.com/resources/images/logo.svg',
       link: 'https://www.superqbit.com/app?id=trailhead-leaderboard',
     },

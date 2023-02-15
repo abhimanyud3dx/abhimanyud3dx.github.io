@@ -5,52 +5,63 @@
             <div class="slds-grid slds-wrap">
                 <div
                     class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-text-align_center slds-align_absolute-center">
-                    <div class="slds-grid slds-wrap">
-                        <div class="slds-col slds-size_1-of-1">
-                            <div class="slds-text-heading_medium slds-align_absolute-center">Let's get in touch</div>
+                    <template if:true={social}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-1">
+                                <div class="slds-text-heading_medium slds-align_absolute-center">Let's get in touch
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+                                <template if:true={social.location}>
+                                    <lightning-icon size="xx-small" icon-name="utility:world">
+                                    </lightning-icon>&nbsp;{social.location}
+                                </template>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+                                <template if:true={social.email}>
+                                    <lightning-icon size="xx-small" icon-name="utility:email">
+                                    </lightning-icon>&nbsp;Email : {social.email}
+                                </template>
+                            </div>
                         </div>
-                        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
-                            <lightning-icon size="xx-small" icon-name="utility:world">
-                            </lightning-icon>&nbsp;Jaipur, India
-                        </div>
-                        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
-                            <lightning-icon size="xx-small" icon-name="utility:email">
-                            </lightning-icon>&nbsp;Email : abhimanyud3dx@gmail.com
-                        </div>
-                    </div>
+                    </template>
                 </div>
                 <div
                     class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-text-align_left">
-                    <form onsubmit={submitForm}>
-                        <div class="slds-grid slds-wrap">
-                            <div class="slds-col slds-size_1-of-1">
-                                <lightning-input label="First Name" class="slds-m-bottom_xx-small" data-id="first_name"
-                                    required max-length="40" type="text" value={formData.first_name}></lightning-input>
+                    <template if:true={showContact}>
+                        <form onsubmit={submitForm}>
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-input label="First Name" class="slds-m-bottom_xx-small"
+                                        data-id="first_name" required max-length="40" type="text"
+                                        value={formData.first_name}></lightning-input>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-input label="Last Name" class="slds-m-bottom_xx-small"
+                                        data-id="last_name" required maxlength="80" max-length="20" type="text"
+                                        value={formData.last_name}></lightning-input>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-input label="Email" data-id="email" class="slds-m-bottom_xx-small"
+                                        required maxlength="80" max-length="20" type="email" onchange={fieldChange}
+                                        value={formData.email}></lightning-input>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-textarea data-id="message" label="Message" class="slds-m-bottom_xx-small"
+                                        required name="message" onchange={fieldChange}
+                                        value={formData.message}></lightning-textarea>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1">
+                                    <div class="slds-text-heading_small">{statusMessage}</div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-text-align_center">
+                                    <lightning-button icon-name="utility:upload"
+                                        class="slds-m-top_small rounded-btn primary" type="submit"
+                                        label="submit"></lightning-button>
+                                </div>
                             </div>
-                            <div class="slds-col slds-size_1-of-1">
-                                <lightning-input label="Last Name" class="slds-m-bottom_xx-small" data-id="last_name"
-                                    required maxlength="80" max-length="20" type="text"
-                                    value={formData.last_name}></lightning-input>
-                            </div>
-                            <div class="slds-col slds-size_1-of-1">
-                                <lightning-input label="Email" data-id="email" class="slds-m-bottom_xx-small" required
-                                    maxlength="80" max-length="20" type="email" onchange={fieldChange}
-                                    value={formData.email}></lightning-input>
-                            </div>
-                            <div class="slds-col slds-size_1-of-1">
-                                <lightning-textarea data-id="message" label="Message" class="slds-m-bottom_xx-small"
-                                    required name="message" onchange={fieldChange}
-                                    value={formData.message}></lightning-textarea>
-                            </div>
-                            <div class="slds-col slds-size_1-of-1">
-                                <div class="slds-text-heading_small">{statusMessage}</div>
-                            </div>
-                            <div class="slds-col slds-size_1-of-1 slds-text-align_center">
-                                <lightning-button icon-name="utility:upload" class="slds-m-top_small rounded-btn primary" type="submit"
-                                    label="submit"></lightning-button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </template>
                 </div>
             </div>
         </div>

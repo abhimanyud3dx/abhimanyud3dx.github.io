@@ -52,7 +52,6 @@
     <img src="https://abhimanyud3dx.github.io/assets/img/hosted/abhimanyud3dx.github.io/preview.gif" alt="Preview" width="60%"/>
   </a>
   <br/>
-  <a href="#abhimanyud3dx"><img src="https://abhimanyud3dx.github.io/assets/img/drop-shadow.png" width="50%" alt="Shadow"/></a>
 </p>
 
 **abhimanyud3dx.github.io** is an easy to use portfolio builder where you can create a portfolio page automatically by just providing your GitHub username. It is built using React.js on top of Vite. But it's not necessary to have knowledge on these to get you started. You can make your own copy with zero coding experience.
@@ -60,7 +59,7 @@
 **Features:**
 
 ✓ [Easy to Setup](#-installation--setup)  
-✓ [2 Themes](#themes)
+✓ [Themes](#themes)
 ✓ [Google Analytics](#google-analytics)  
 ✓ [SEO](#seo)  
 ✓ [Avatar and Bio](#avatar-and-bio)  
@@ -136,8 +135,11 @@ All the magic happens in the file `src/modules/data/config/config.js`. Open it a
 
 ```js
 // abhimanyud3dx.github.io.config.js
-
 const config = {
+    header: {
+        name: 'Abhimanyu Singh Tanwar',
+        menu: ['ABOUT','SKILLS','EXPERIENCE','PROJECTS','CERTIFICATES','EDUCATION']
+    },
     github: {
         username: 'abhimanyud3dx', // Your GitHub org/user name. (Required)
         sortBy: 'stars', // stars | updated
@@ -341,6 +343,7 @@ const config = {
         website: '',
         phone: '',
         email: '',
+        location: '',
     }
 };
 ```

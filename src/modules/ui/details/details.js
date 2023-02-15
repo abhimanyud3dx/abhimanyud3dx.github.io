@@ -1,4 +1,4 @@
-import { LightningElement,api } from 'lwc';
+import { LightningElement, api } from 'lwc';
 import { serverMethod } from 'data/apiService';
 
 export default class Details extends LightningElement {
@@ -15,8 +15,9 @@ export default class Details extends LightningElement {
         this.github = this.config.github;
         this.social = this.config.social;
         this.resume = this.config.resume;
-
-        this.retrieveGitProfile();
+        if (this.github && this.github.username) {
+            this.retrieveGitProfile();
+        }
     }
 
     openResume(e) {
@@ -25,7 +26,7 @@ export default class Details extends LightningElement {
 
     retrieveGitProfile() {
         this.loading = true;
-        serverMethod('https://api.github.com/users/abhimanyud3dx', 'GET')
+        serverMethod('https://api.github.com/users/' + this.github.username, 'GET')
             .then((result) => {
                 this.githubProfile = result;
                 this.loading = false;
