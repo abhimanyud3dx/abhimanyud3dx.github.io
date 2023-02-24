@@ -18,6 +18,10 @@ jobs:
             # Checkout the code in the pull request
             - name: 'Checkout source code'
               uses: actions/checkout@v2
+            - name: 'Install Node'
+              uses: actions/setup-node@v3
+              with:
+                node-version: 16
 
             # Cache node_modules to speed up the process
             - name: Restore node_modules cache
