@@ -21,6 +21,9 @@ export default class App extends LightningElement {
         if (this.config.themeConfig) {
             this.applyTheme(this.config.themeConfig.defaultTheme);
         }
+        registerListener('theme_change', (event) => {
+            this.applyTheme(event.id);
+        });        
     }
 
     disconnectedCallback() {
@@ -46,11 +49,11 @@ export default class App extends LightningElement {
                 css += 'svg { fill:' + this.config.themeConfig[themeName].baseText + ' !important; }';
             }
             if (this.config.themeConfig[themeName].primary) {
-                css += 'body, .primary, .slds-timeline__item_call:before, .invertIcon, .slds-button, input, textarea { background-color:' + this.config.themeConfig[themeName].primary + ' !important; }';
+                css += 'body, .primary, .slds-timeline__item_call:before, .invertIcon, button, .slds-button, input, textarea,.slds-listbox, lightning-base-combobox-item { background-color:' + this.config.themeConfig[themeName].primary + ' !important; }';
             }
             if (this.config.themeConfig[themeName].primaryText) {
-                css += 'body, .primary, .slds-button, input, textarea { color:' + this.config.themeConfig[themeName].primaryText + ' !important; }';
-                css += '.primary  svg , .slds-button  svg , .invertIcon svg{ fill:' + this.config.themeConfig[themeName].primaryText + ' !important; }';
+                css += 'body, .primary, .slds-button, button, button span,lightning-base-combobox span, input, textarea { color:' + this.config.themeConfig[themeName].primaryText + ' !important; }';
+                css += '.primary  svg , .slds-button  svg, lightning-base-combobox svg, .invertIcon svg{ fill:' + this.config.themeConfig[themeName].primaryText + ' !important; }';
             }
             if (this.config.themeConfig[themeName].roundedbox) {
                 css += '.rounded-box, .slds-box,  input, textarea { border-radius:' + this.config.themeConfig[themeName].roundedbox + ' !important; }';

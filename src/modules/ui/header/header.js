@@ -23,4 +23,19 @@ export default class Header extends LightningElement {
     handleScrollClick(e){
         fireEvent('scroll', {id:e.target.dataset.targetid});
     }
+
+    value = 'light';
+
+    get options() {
+        return [
+            { label: 'Light', value: 'light' },
+            { label: 'Aqua', value: 'aqua' },
+            { label: 'Dark', value: 'dark' },
+        ];
+    }
+
+    handleChange(event) {
+        this.value = event.detail.value;
+        fireEvent('theme_change', {id:this.value});
+    }
 }

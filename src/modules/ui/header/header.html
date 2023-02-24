@@ -29,14 +29,20 @@
             <nav class="slds-context-bar__secondary slds-show_medium" role="navigation">
                 <ul class="slds-grid">
                     <template for:each={menuItems} for:item="item">
-                        <li class="slds-context-bar__item" key={item.name} >
-                            <a data-targetid={item.target} class="slds-context-bar__label-action" title={item.name} onclick={handleScrollClick}>
-                                <span class="slds-truncate" data-targetid={item.target} title={item.name}>{item.name}</span>
+                        <li class="slds-context-bar__item" key={item.name}>
+                            <a data-targetid={item.target} class="slds-context-bar__label-action" title={item.name}
+                                onclick={handleScrollClick}>
+                                <span class="slds-truncate" data-targetid={item.target}
+                                    title={item.name}>{item.name}</span>
                             </a>
                         </li>
                     </template>
                 </ul>
             </nav>
+            <div class="slds-m-right_x-small slds-m-top_xx-small">
+                <lightning-combobox name="theme" variant="label-hidden" label="Theme" value={value}
+                    placeholder="Select Theme" options={options} onchange={handleChange}></lightning-combobox>
+            </div>
         </div>
     </header>
 </template>
