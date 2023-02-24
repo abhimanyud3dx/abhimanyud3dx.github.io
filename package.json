@@ -27,7 +27,7 @@
         "prettier": "^2.2.1"
     },
     "engines": {
-        "node": "16.13.0"
+        "node": "16.2.0"
     },
     "homepage": "https://abhimanyud3dx.github.io",
     "keywords": [
@@ -63,6 +63,6 @@
         "postinstall": "husky install",
         "precommit": "yarn prettier && yarn lint && yarn test:unit",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "NODE_OPTIONS=--openssl-legacy-provider &&  gh-pages -d dist"
     }
 }
