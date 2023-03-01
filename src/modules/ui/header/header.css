@@ -4,3 +4,7 @@
 .icon-logo  {
     width: 34px;
 }
+.themeSelector {
+    position: absolute;
+    right: 0;
+}

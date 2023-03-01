@@ -19,8 +19,9 @@ const config = {
     twitter: 'abhimanyud3dx',
     facebook: 'abhimanyu.singhtanwar',
     instagram: 'abhimanyud3dx',
-    medium: 'abhimanyud3dx',
+    medium: 'abhimanyu.singh.d3dx',
     dev: 'abhimanyud3dx',
+    artstation:'abhimanyud3dx',
     stackoverflow: '4438108/abhimanyud3dx', // format: userid/username
     website: 'https://www.superqbit.com',
     phone: '+918852055355',
@@ -174,7 +175,7 @@ const config = {
       baseL1:'#fff',
     },
     aqua: {
-      primary: '#E3E3ED',  
+      primary: '#fff',  
       primaryText: '#219aaf',    
       baseL1: '#78b0fd',
       baseL2: '#fc055b',

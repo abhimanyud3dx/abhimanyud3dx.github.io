@@ -48,7 +48,7 @@
 </p>
 
 <p align="center">
-To view a live example, **[click here](https://abhimanyud3dx.github.io/abhimanyud3dx.github.io)**.
+To view a live example, <a href="https://abhimanyud3dx.github.io/abhimanyud3dx.github.io">Click here</a>.
 </p>
  <br/>
 <p align="center">

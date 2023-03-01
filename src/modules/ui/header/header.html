@@ -37,11 +37,20 @@
                             </a>
                         </li>
                     </template>
+                    <li class="slds-context-bar__item slds-p-top_xx-small" key={themevalue}>
+                        <template if:true={options}>
+                            <lightning-combobox name="theme" variant="label-hidden" label="Theme" value={themevalue}
+                                placeholder="Select Theme" options={options}
+                                onchange={handleChange}></lightning-combobox>
+                        </template>
+                    </li>
                 </ul>
             </nav>
-            <div class="slds-m-right_x-small slds-m-top_xx-small">
-                <lightning-combobox name="theme" variant="label-hidden" label="Theme" value={value}
-                    placeholder="Select Theme" options={options} onchange={handleChange}></lightning-combobox>
+            <div class="slds-m-right_x-small slds-m-top_xx-small themeSelector slds-hide_medium">
+                <template if:true={options}>
+                    <lightning-combobox name="theme" variant="label-hidden" label="Theme" value={themevalue}
+                        placeholder="Select Theme" options={options} onchange={handleChange}></lightning-combobox>
+                </template>
             </div>
         </div>
     </header>
