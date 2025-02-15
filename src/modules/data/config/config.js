@@ -30,7 +30,7 @@ const config = {
   },
   resume: 'https://docs.google.com/document/d/e/2PACX-1vSx5p_8pCfhOQ_vQCW67a2xZ_yFQ-REYbKE5SLsNT9pmCQOO5mQa6XUxhvSSBdSVunPWM00LJNy3lCk/pub',
   // Empty fileUrl will hide the `Download Resume` button.
-  skills: [
+  skills: [ 
     'Salesforce',
     'LWC',
     'Aura',
