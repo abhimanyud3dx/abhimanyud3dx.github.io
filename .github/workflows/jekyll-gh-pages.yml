@@ -1,0 +1,52 @@
+# Unique name for this workflow
+name: Build LWC
+# Definition when the workflow should run
+on:
+    push:
+        branches:
+            - main
+        paths-ignore:
+            - 'README.md'
+            - .github/**
+# Jobs to be executed
+jobs:
+    deploy-to-gh-pages:
+        runs-on: ubuntu-latest
+        steps:
+            # Checkout the code in the pull request
+            - name: 'Checkout source code'
+              uses: actions/checkout@v2
+            - name: 'Install Node'
+              uses: actions/setup-node@v3
+              with:
+                node-version: 16
+            # Cache node_modules to speed up the process
+            - name: Restore node_modules cache
+              id: cache-npm
+              uses: actions/cache@v1
+              with:
+                  path: node_modules
+                  key: npm-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      npm-${{ env.cache-name }}-
+                      npm-
+            # Install npm dependencies
+            - name: 'Install npm dependencies'
+              if: steps.cache-npm.outputs.cache-hit != 'true'
+              run:  npm install
+                    npm ci
+            # Build LWC and Eleventy
+            #- name: 'Building LWC'
+             # run: npm run deploy
+            # Deploy to GitHub pages
+            #- name: 'Deploy to GitHub pages'
+            #  uses: peaceiris/actions-gh-pages@v3
+            #  with:
+            #      publish_dir: ./public
+            #      github_token: ${{ secrets.GITHUB_TOKEN }}
+            - name: Deploy with gh-pages
+              run: |
+                  git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                  npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
