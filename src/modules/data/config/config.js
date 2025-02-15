@@ -28,7 +28,7 @@ const config = {
     email: 'abhimanyud3dx@gmail.com',
     location: 'Jaipur, Rajasthan',
   },
-  resume: 'https://docs.google.com/document/d/1b7hrWGT0XFhhfg3ZEHZ1lMDdTgpjMXgkFXvUPBO5fUA/edit',
+  resume: 'https://docs.google.com/document/d/e/2PACX-1vSx5p_8pCfhOQ_vQCW67a2xZ_yFQ-REYbKE5SLsNT9pmCQOO5mQa6XUxhvSSBdSVunPWM00LJNy3lCk/pub',
   // Empty fileUrl will hide the `Download Resume` button.
   skills: [
     'Salesforce',
@@ -49,7 +49,7 @@ const config = {
       name: 'TEKSystems',
       title: 'Module Lead',
       from: 'April 2019',
-      to: 'Present',
+      to: 'Nov 2023',
       link: 'https://teksystems.com/',
       location: 'Hyderabad, Telangana',
       description: 'Working as a Salesforce tech lead and architect.'
