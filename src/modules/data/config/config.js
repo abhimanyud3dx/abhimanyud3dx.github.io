@@ -28,6 +28,7 @@ const config = {
     email: 'abhimanyud3dx@gmail.com',
     location: 'Jaipur, Rajasthan',
   },
+
   resume: 'https://docs.google.com/document/d/e/2PACX-1vSx5p_8pCfhOQ_vQCW67a2xZ_yFQ-REYbKE5SLsNT9pmCQOO5mQa6XUxhvSSBdSVunPWM00LJNy3lCk/pub',
   // Empty fileUrl will hide the `Download Resume` button.
   skills: [
@@ -46,7 +47,7 @@ const config = {
   // Remove experiences to hide section
   experiences: [
     {
-      name: 'TEKSystems',
+      name: 'TGS ', 
       title: 'Module Lead',
       from: 'April 2019',
       to: 'Nov 2023',
